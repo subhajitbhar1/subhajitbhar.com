@@ -1,0 +1,14 @@
+[project]
+name = "blogs-subhajitbhar-com"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "cairocffi>=1.7.1",
+    "cairosvg>=2.8.2",
+    "mkdocs-material[imaging]>=9.6.20",
+    "mkdocs-rss-plugin>=1.17.3",
+    "pillow>=11.3.0",
+    "urllib3>=2.5.0",
+]

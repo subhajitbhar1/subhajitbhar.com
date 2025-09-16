@@ -11,6 +11,7 @@ categories:
 tags:
     - Test
 slug: my-first-post 
+description: This is my first post
 ---
 
 # First Post

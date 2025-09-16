@@ -1,5 +1,6 @@
 site_name: Subhajit Bhar
 site_url: https://www.blogs.subhajitbhar.com
+repo_url: https://github.com/buildwithjit/blogs.subhajitbhar.com
 theme:
     name: material
     custom_dir: overrides
@@ -7,33 +8,44 @@ theme:
     font:
         text: Roboto
         code: Fira Code
-    # palette:
-    #     # dark mode
-    #     - scheme: slate
-    #       toggle:
-    #           icon: material/weather-sunny
-    #           name: Dark Mode
-    #       primary: cyan
-    #       accent: yellow
-    #     # light mode
-    #     - scheme: default
-    #       toggle:
-    #           icon: material/weather-night
-    #           name: Light Mode
-    #       primary: blue
-    #       accent: orange
+    palette:
+      primary : black
+      accent : blue
+        # dark mode
+        # - scheme: slate
+        #   toggle:
+        #       icon: material/weather-sunny
+        #       name: Dark Mode
+        #   primary: custom
+        #   accent: custom
+        # light mode
+        # - scheme: default
+          # toggle:
+          #     icon: material/weather-night
+          #     name: Light Mode
+          # primary: blue
+          # accent: orange
+
     features:
+        # ---search features---
+        - search.suggest
+        - search.highlight
+
         - content.code.copy
         - content.code.select
         - content.code.annotate
+        # ---navigation features---
         - navigation.instant
+        - navigation.instant.prefetch
         - navigation.instant.progress
+        - navigation.tabs
         - navigation.path
 
-# nav:
-#     - Home: index.md
-#     - Blog:
-#           - blog/handle-missing-values-pandas-without-losing-information.md
+nav:
+    - index.md
+    - Blog:
+          - blog/index.md
+    - Tag: tags.md
 
 extra_css:
     # - stylesheets/style.css
@@ -48,7 +60,9 @@ hooks:
 #         property: G-xxxxxx
 
 plugins:
+    # serach plugins
     - search
+    - social
     - blog:
           blog_dir: blog # Changed from ./blog to blog to match your structure
           archive_date_format: yyyy
