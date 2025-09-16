@@ -1,0 +1,81 @@
+site_name: Subhajit Bhar
+site_url: https://www.blogs.subhajitbhar.com
+theme:
+    name: material
+    custom_dir: overrides
+    # favicon: img/favicon.ico
+    font:
+        text: Roboto
+        code: Fira Code
+    # palette:
+    #     # dark mode
+    #     - scheme: slate
+    #       toggle:
+    #           icon: material/weather-sunny
+    #           name: Dark Mode
+    #       primary: cyan
+    #       accent: yellow
+    #     # light mode
+    #     - scheme: default
+    #       toggle:
+    #           icon: material/weather-night
+    #           name: Light Mode
+    #       primary: blue
+    #       accent: orange
+    features:
+        - content.code.copy
+        - content.code.select
+        - content.code.annotate
+        - navigation.instant
+        - navigation.instant.progress
+        - navigation.path
+
+# nav:
+#     - Home: index.md
+#     - Blog:
+#           - blog/handle-missing-values-pandas-without-losing-information.md
+
+extra_css:
+    # - stylesheets/style.css
+    - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+
+hooks:
+    - hooks/socialmedia.py
+
+# extra:
+#     analytics:
+#         provider: google
+#         property: G-xxxxxx
+
+plugins:
+    - search
+    - blog:
+          blog_dir: blog # Changed from ./blog to blog to match your structure
+          archive_date_format: yyyy
+          archive_url_date_format: yyyy
+          post_url_format: "{slug}"
+          categories_allowed:
+              - Test
+              - Tech
+              - Python
+    - tags:
+          tags_file: tags.md
+
+markdown_extensions:
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+          alternate_style: true
+    - attr_list
+    - md_in_html
+    - pymdownx.blocks.caption
+    - admonition
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
