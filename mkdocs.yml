@@ -81,7 +81,8 @@ plugins:
               - Test
               - Tech
               - Python
-    - tags: 
+          draft_if_future_date: true 
+    - tags:
           tags_file: tags.md
 
 markdown_extensions:
