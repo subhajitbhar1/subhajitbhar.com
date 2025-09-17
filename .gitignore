@@ -12,3 +12,4 @@ wheels/
 
 # MkDocs cache
 .cache/
+libcairo.2.dylib
