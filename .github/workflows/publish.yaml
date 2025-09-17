@@ -3,6 +3,10 @@ on:
     push:
         branches:
             - main
+    schedule:
+        # Run daily at 1 AM UTC
+        - cron: "0 1 * * *"
+    workflow_dispatch: # Allow manual triggering
 permissions:
     contents: write
 jobs:

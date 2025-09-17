@@ -4,7 +4,7 @@ authors:
 title: Handle Missing Values in Pandas Without Losing Information
 description: This guide covers proven methods to handle missing data in pandas without compromising data integrity or analytical accuracy.
 date: 
-    created: 2025-09-18
+    created: 2025-09-17
 categories:
     - Test
     - Tech
