@@ -1,5 +1,5 @@
 site_name: Subhajit Bhar
-site_url: https://www.blogs.subhajitbhar.com
+site_url: https://www.blog.subhajitbhar.com
 repo_url: https://github.com/buildwithjit/blogs.subhajitbhar.com
 theme:
     name: material
@@ -9,22 +9,23 @@ theme:
         text: Roboto
         code: Fira Code
     palette:
-      primary : black
-      accent : blue
-        # dark mode
-        # - scheme: slate
-        #   toggle:
-        #       icon: material/weather-sunny
-        #       name: Dark Mode
-        #   primary: custom
-        #   accent: custom
-        # light mode
-        # - scheme: default
-          # toggle:
-          #     icon: material/weather-night
-          #     name: Light Mode
-          # primary: blue
-          # accent: orange
+        primary: black
+        accent:
+            blue
+            # dark mode
+            # - scheme: slate
+            #   toggle:
+            #       icon: material/weather-sunny
+            #       name: Dark Mode
+            #   primary: custom
+            #   accent: custom
+            # light mode
+            # - scheme: default
+            # toggle:
+            #     icon: material/weather-night
+            #     name: Light Mode
+            # primary: blue
+            # accent: orange
 
     features:
         # ---search features---
@@ -63,6 +64,7 @@ plugins:
     # serach plugins
     - search
     - social
+    - meta
     - blog:
           blog_dir: blog # Changed from ./blog to blog to match your structure
           archive_date_format: yyyy
@@ -72,8 +74,7 @@ plugins:
               - Test
               - Tech
               - Python
-    - tags:
-          tags_file: tags.md
+    - tags
 
 markdown_extensions:
     - pymdownx.highlight:
