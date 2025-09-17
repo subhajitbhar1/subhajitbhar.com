@@ -4,7 +4,7 @@ import re
 
 x_intent = "https://x.com/intent/tweet"
 fb_sharer = "https://www.facebook.com/sharer/sharer.php"
-include = re.compile(r"blog/*")
+include = re.compile(r"blog/.+")
 
 def on_page_markdown(markdown, **kwargs):
     page = kwargs['page']
