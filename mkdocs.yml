@@ -61,9 +61,16 @@ hooks:
 #         property: G-xxxxxx
 
 plugins:
-    # serach plugins
+    # search plugins
     - search
-    - social
+    - social:
+          cache_dir: .cache/social
+          cards_dir: assets/images/social # This stays the same
+          cards: true
+          cards_layout_options:
+              background_color: "#0f1419"
+              color: "#ffffff"
+              font_family: Roboto
     - meta
     - blog:
           blog_dir: blog # Changed from ./blog to blog to match your structure

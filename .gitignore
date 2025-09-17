@@ -13,3 +13,6 @@ wheels/
 # MkDocs cache
 .cache/
 libcairo.2.dylib
+
+# MkDocs build output
+site/
