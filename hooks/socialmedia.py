@@ -19,7 +19,6 @@ def on_page_markdown(markdown, **kwargs):
     return markdown + dedent(f"""
 
     ---
-
     **Share this post:**
 
     [Share on :simple-x:]({x_intent}?text={page_title}&url={page_url}){{ .md-button }}
