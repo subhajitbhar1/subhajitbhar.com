@@ -65,7 +65,7 @@ plugins:
     - search
     - social:
           cache_dir: .cache/social
-          cards_dir: assets/images/social # This stays the same
+          cards_dir: assets/images/social
           cards: true
           cards_layout_options:
               background_color: "#0f1419"
@@ -81,7 +81,8 @@ plugins:
               - Test
               - Tech
               - Python
-    - tags
+    - tags: 
+          tags_file: tags.md
 
 markdown_extensions:
     - pymdownx.highlight:
