@@ -16,3 +16,5 @@ libcairo.2.dylib
 
 # MkDocs build output
 site/
+meta.html
+overrides/partials/head.html
