@@ -1,4 +1,4 @@
-<div style="text-align: center; "><img src="img/profile.jpg" alt="Circular Image" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; "></div>
+<div style="text-align: center; "><img src="img/profile.webp" alt="Circular Image" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; "></div>
 
 <br>
 

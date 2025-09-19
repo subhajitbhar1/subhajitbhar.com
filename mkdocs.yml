@@ -41,6 +41,7 @@ theme:
         - navigation.instant.progress
         - navigation.tabs
         - navigation.path
+        - navigation.footer
 
 nav:
     - index.md
@@ -48,10 +49,6 @@ nav:
           - blog/index.md
     - Tag: tags.md
 
-extra_css:
-    # - stylesheets/style.css
-    - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
-    - https://unpkg.com/katex@0/dist/katex.min.css
 hooks:
     - hooks/socialmedia.py
 
@@ -108,6 +105,24 @@ markdown_extensions:
           generic: true
 
 extra_javascript:
-  - javascripts/katex.js
-  - https://unpkg.com/katex@0/dist/katex.min.js
-  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+    - javascripts/katex.js
+    - https://unpkg.com/katex@0/dist/katex.min.js
+    - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+    # - stylesheets/style.css
+    - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+    - https://unpkg.com/katex@0/dist/katex.min.css
+
+extra:
+    social:
+        - icon: fontawesome/brands/x-twitter
+          link: https://x.com/BuildWithJit
+        - icon: fontawesome/brands/linkedin
+          link: https://www.linkedin.com/in/subhajit-bhar
+        - icon: fontawesome/brands/github
+          link: https://github.com/BuildWithJit
+        - icon: fontawesome/brands/medium
+          link: https://medium.com/@jitwrites
+        - icon: fontawesome/brands/upwork
+          link: https://www.upwork.com/freelancers/sbhar
