@@ -1,8 +1,8 @@
-<div style="text-align: center;"><img src="img/profile.jpg" alt="Circular Image" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; "></div>
+<div style="text-align: center; "><img src="img/profile.jpg" alt="Circular Image" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; "></div>
 
 <br>
 
-<h1 style="text-align: center;">Hi! I'm  Subhajit</h1>
+<h1 style="text-align: center; font-family: 'Arial', sans-serif;">Hi! I'm  Subhajit</h1>
 
 I'm a freelance machine learning engineer based in the United Kingdom with 3+ years of experience building data automation workflows, interactive dashboards, and machine learning systems across finance, e-commerce, and data-driven research.
 
