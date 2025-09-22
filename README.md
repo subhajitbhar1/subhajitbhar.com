@@ -16,4 +16,15 @@ This project is built with [MkDocs](https://www.mkdocs.org/) and [Material for M
 
 The blog is hosted on [GitHub Pages](https://pages.github.com/).
 
-If you have any questions, please contact me at [hello@subhajitbhar.com](mailto:hello@subhajitbhar.com).
+
+---
+
+<div align="center">
+<h3 >Connect with me</h3>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/subhajitbhar1/)
+[![Upwork](https://img.shields.io/badge/Upwork-6FDA44?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/subhajitbhar1)
+
+<a href="mailto:hello@subhajitbhar.com"><img src="https://img.shields.io/badge/Email-hello%40subhajitbhar.com-000000?style=for-the-badge&logo=gmail&logoColor=white" alt="Email: hello@subhajitbhar.com" /></a>
+
+</div>
