@@ -6,7 +6,6 @@ description: Understand Maxwell’s four fundamental equations with plain‑Engl
 slug: maxwell-equations-explained
 date: 
     created: 2125-09-17
-draft: false
 categories:
     - Physics
 tags:
