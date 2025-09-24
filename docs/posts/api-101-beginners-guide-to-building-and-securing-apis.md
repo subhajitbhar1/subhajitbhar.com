@@ -3,6 +3,7 @@ authors:
     - subhajit
 title: API 101 — The Beginner’s Guide to Building and Securing APIs
 description: Learn API basics step-by-step with simple HTTP concepts, a minimal FastAPI app, beginner security, diagrams, and a handy glossary.
+slug: api-101-beginner-guide
 date:
     created: 2025-09-24
 categories:
@@ -16,7 +17,7 @@ tags:
 twitter_card: "summary_large_image"
 ---
 
-New to APIs? This guide explains core concepts in clear language, then walks you through building a small FastAPI service with essential security and testing tips. When you’re ready for advanced patterns, read the companion: [Designing Secure and Scalable APIs — A Comprehensive Guide](./designing-secure-and-scalable-apis-a-comprehensive-guide.md).
+New to APIs? This guide explains core concepts in clear language, then walks you through building a small FastAPI service with essential security and testing tips. When you’re ready for advanced patterns, read the companion: [Designing Secure and Scalable APIs — A Comprehensive Guide](/blog/secure-scalable-apis-guide/).
 
 <!-- more -->
 
@@ -196,6 +197,6 @@ curl -i https://api.example.com/v1/items/it_1
 
 ## What’s Next
 
-Ready to go deeper? See the advanced guide for versioning, ETags, RBAC, rate limiting, webhooks security, observability, and more: [Designing Secure and Scalable APIs — A Comprehensive Guide](./designing-secure-and-scalable-apis-a-comprehensive-guide.md).
+Ready to go deeper? See the advanced guide for versioning, ETags, RBAC, rate limiting, webhooks security, observability, and more: [Designing Secure and Scalable APIs — A Comprehensive Guide](/secure-scalable-apis-guide/).
 
 
