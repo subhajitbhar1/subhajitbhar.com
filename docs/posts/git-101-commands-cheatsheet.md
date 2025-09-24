@@ -2,7 +2,8 @@
 authors: 
     - subhajit
 title: Git 101 – Commands and Workflows Cheat Sheet
-description: Practical Git commands for daily use, with the minimal mental model and examples. Copy-paste friendly, organized by task.
+description: Practical Git commands and workflows with a minimal mental model, examples, and copy‑paste snippets.
+slug: git-101-cheat-sheet
 date: 
     created: 2025-09-24
 categories:
@@ -171,6 +172,6 @@ git push -u origin feat/x
 # open PR on GitHub
 ```
 
-See also: the full guide [“The Definitive Guide to Version Control with Git and GitHub”](https://blog.subhajitbhar.com/posts/version-control-git-and-github-comprehensive-guide/).
+See also: the full guide [“The Definitive Guide to Version Control with Git and GitHub”](/version-control-git-github/).
 
 

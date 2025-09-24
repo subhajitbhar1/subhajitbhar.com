@@ -78,6 +78,7 @@ plugins:
               - Tech
               - Python
               - Physics
+              - System Design
           draft_if_future_date: true
     - tags:
           tags_file: tags.md
