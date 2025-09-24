@@ -44,9 +44,8 @@ theme:
         - navigation.footer
 
 nav:
-    - About: index.md
-    - Blog:
-          - blog/index.md
+    - About: about/index.md
+    - Blog: index.md
     - Tag: tags.md
 
 hooks:
@@ -70,7 +69,7 @@ plugins:
               font_family: Roboto
     - meta
     - blog:
-          blog_dir: blog # Changed from ./blog to blog to match your structure
+          blog_dir: . # Changed from ./blog to blog to match your structure
           archive_date_format: yyyy
           archive_url_date_format: yyyy
           post_url_format: "{slug}"
