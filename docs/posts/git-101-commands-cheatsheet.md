@@ -171,6 +171,6 @@ git push -u origin feat/x
 # open PR on GitHub
 ```
 
-See also: the full guide [“The Definitive Guide to Version Control with Git and GitHub”](https://blog.subhajitbhar.com/posts/version-control-git-and-github-comprehensive-guide/).
+See also: the full guide [“The Definitive Guide to Version Control with Git and GitHub”](./version-control-git-and-github-comprehensive-guide.md).
 
 
