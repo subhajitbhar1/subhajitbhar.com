@@ -16,8 +16,7 @@ This project is built with [MkDocs](https://www.mkdocs.org/) and [Material for M
 
 The blog is hosted on [GitHub Pages](https://pages.github.com/).
 
-
----
+<br> 
 
 <div align="center">
 <h3 >Connect with me</h3>
