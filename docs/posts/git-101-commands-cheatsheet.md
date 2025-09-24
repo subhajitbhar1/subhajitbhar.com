@@ -2,7 +2,7 @@
 authors: 
     - subhajit
 title: Git 101 – Commands and Workflows Cheat Sheet
-description: Practical Git commands for daily use, with the minimal mental model and examples. Copy-paste friendly, organized by task.
+description: Practical Git commands and workflows with a minimal mental model, examples, and copy‑paste snippets.
 slug: git-101-cheat-sheet
 date: 
     created: 2025-09-24

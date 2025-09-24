@@ -2,7 +2,7 @@
 authors:
     - subhajit
 title: System Architecture — A Comprehensive, Practical Guide
-description: A complete, practical guide to system architecture covering core concepts, patterns, trade-offs, diagrams, and production checklists. Includes answers to common questions about scalability, reliability, and design choices.
+description: Practical guide to system architecture covering core concepts, patterns, trade‑offs, diagrams, and production checklists.
 slug: system-architecture-comprehensive-guide
 date:
     created: 2025-09-24

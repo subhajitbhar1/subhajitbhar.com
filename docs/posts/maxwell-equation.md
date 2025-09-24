@@ -2,10 +2,10 @@
 authors: 
     - subhajit
 title: Understanding Maxwell's Equations - The Foundation of Electromagnetism
-description: Explore the four fundamental Maxwell's equations that form the foundation of classical electromagnetism, optics, and electric circuits, with practical applications in modern technology.
+description: Understand Maxwell’s four fundamental equations with plain‑English explanations and real‑world applications.
 slug: maxwell-equations-explained
 date: 
-    created: 2025-09-17
+    created: 2125-09-17
 draft: false
 categories:
     - Physics
