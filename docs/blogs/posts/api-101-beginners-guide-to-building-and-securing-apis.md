@@ -16,7 +16,7 @@ tags:
 twitter_card: "summary_large_image"
 ---
 
-New to APIs? This guide explains core concepts in clear language, then walks you through building a small FastAPI service with essential security and testing tips. When you’re ready for advanced patterns, read the companion: [Designing Secure and Scalable APIs — A Comprehensive Guide](/blog/secure-scalable-apis-guide/).
+New to APIs? This guide explains core concepts in clear language, then walks you through building a small FastAPI service with essential security and testing tips. When you’re ready for advanced patterns, read the companion: [Designing Secure and Scalable APIs — A Comprehensive Guide](/blogs/secure-scalable-apis-guide/).
 
 <!-- more -->
 
