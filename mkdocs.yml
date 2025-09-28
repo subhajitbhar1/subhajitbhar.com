@@ -1,6 +1,6 @@
 site_name: Subhajit Bhar
-site_url: https://blog.subhajitbhar.com
-repo_url: https://github.com/buildwithjit/blogs.subhajitbhar.com
+site_url: https://www.subhajitbhar.com
+repo_url: https://github.com/subhajitbhar1/subhajitbhar.com
 theme:
     name: material
     custom_dir: overrides
