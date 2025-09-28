@@ -1,15 +1,17 @@
 User-agent: *
 Allow: /
-Allow: /blog/
+Allow: /blogs/
 Allow: /tags/
+Allow: /projects/
+Allow: /testimonials/
 
 # Block specific areas (examples)
-# Disallow: /admin/
-# Disallow: /.git/
-# Disallow: /search/
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /search/
 
 # Sitemap
-Sitemap: https://blog.subhajitbhar.com/sitemap.xml
+Sitemap: https://subhajitbhar.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
