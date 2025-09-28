@@ -1,3 +1,21 @@
+---
+title: Home
+description: Home page
+slug: home
+date:
+    created: 2025-09-28
+meta: 
+ - name: robots
+   content: index, follow
+ - name: keywords
+   content: Subhajit Bhar, freelance data scientist, OCR, NLP, LLM, RAG, knowledge base
+ - name: Publisher
+   content: Subhajit Bhar
+---
+
+
+
+
 <div style="text-align: center; "><img src="../img/profile.webp" alt="Circular Image" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; "></div>
 
 <br>
