@@ -7,8 +7,8 @@ slug: secure-scalable-apis-guide
 date:
     created: 2025-09-24
 categories:
-    - Tech
     - Python
+    - System Design
 tags:
     - API
     - Security

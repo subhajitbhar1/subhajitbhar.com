@@ -7,7 +7,6 @@ slug: system-architecture-comprehensive-guide
 date:
     created: 2025-09-24
 categories:
-    - Tech
     - System Design
 tags:
     - Architecture

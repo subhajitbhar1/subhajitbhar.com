@@ -7,7 +7,7 @@ slug: version-control-git-github
 date: 
     created: 2025-09-24
 categories:
-    - Tech
+    - DevOps
 tags:
     - Git
     - GitHub

@@ -4,34 +4,20 @@ repo_url: https://github.com/buildwithjit/blogs.subhajitbhar.com
 theme:
     name: material
     custom_dir: overrides
-    # favicon: img/favicon.ico
+    # logo: img/profile.webp
+    favicon: img/favicon.ico
     font:
         text: Roboto
         code: Fira Code
     palette:
         primary: black
-        accent:
-            blue
-            # dark mode
-            # - scheme: slate
-            #   toggle:
-            #       icon: material/weather-sunny
-            #       name: Dark Mode
-            #   primary: custom
-            #   accent: custom
-            # light mode
-            # - scheme: default
-            # toggle:
-            #     icon: material/weather-night
-            #     name: Light Mode
-            # primary: blue
-            # accent: orange
-
+        accent: red
+            
     features:
         # ---search features---
         - search.suggest
         - search.highlight
-
+        # ---content features---
         - content.code.copy
         - content.code.select
         - content.code.annotate
@@ -40,21 +26,20 @@ theme:
         - navigation.instant.prefetch
         - navigation.instant.progress
         - navigation.tabs
+        - navigation.tabs.sticky
         - navigation.path
         - navigation.footer
 
 nav:
-    - About: about/index.md
-    - Blog: index.md
-    - Tag: tags.md
+    - index.md
+    - Blog: 
+      - blogs/index.md
+    - Projects: /projects/
+    - Tags: tags.md
+    - Testimonials: testimonials.md
 
 hooks:
     - hooks/socialmedia.py
-
-# extra:
-#     analytics:
-#         provider: google
-#         property: G-xxxxxx
 
 plugins:
     # search plugins
@@ -69,19 +54,35 @@ plugins:
               font_family: Roboto
     - meta
     - blog:
-          blog_dir: . # Changed from ./blog to blog to match your structure
-          archive_date_format: yyyy
-          archive_url_date_format: yyyy
+          blog_dir: blogs
+          blog_toc: true
+          archive: false
+          categories: true
           post_url_format: "{slug}"
-          categories_allowed:
-              - Test
-              - Tech
-              - Python
-              - Physics
-              - System Design
           draft_if_future_date: true
+          authors_profiles: true
+          pagination_per_page: 10
+          categories_allowed:
+            - Python
+            - Data Science
+            - AI ML
+            - DevOps
+            - System Design
+            - Automation
+            - Freelancing   
+            - Physics      
+
     - tags:
           tags_file: tags.md
+    - blog:
+          blog_dir: projects
+          blog_toc: true
+          archive: false
+          categories: false
+          post_url_format: "{slug}"
+          draft_if_future_date: true
+          authors_profiles: true
+          pagination_per_page: 10
 
 markdown_extensions:
     - pymdownx.highlight:
@@ -120,7 +121,11 @@ extra_css:
     # - stylesheets/style.css
     - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
     - https://unpkg.com/katex@0/dist/katex.min.css
-
+    - 
+# extra:
+#     analytics:
+#         provider: google
+#         property: G-xxxxxx
 extra:
     social:
         - icon: fontawesome/brands/x-twitter
@@ -136,3 +141,5 @@ extra:
 
 watch:
     - . # watch all files and directories in the root directory
+
+copyright: Copyright &copy; 2025 Subhajit Bhar

@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+
+{% block content %}
+{% set u = page.url or '' %}
+<!-- Debug: URL is "{{ u }}" -->
+{% if u and 'category/' in u %}
+<!-- Debug: Found category in URL -->
+{% if 'blogs/' in u %}
+<p class="back-to-blog">
+    <a href="{{ 'blogs/' | url }}">← Back to Blog</a>
+</p>
+{% elif 'projects/' in u %}
+<p class="back-to-projects">
+    <a href="{{ 'projects/' | url }}">← Back to Projects</a>
+</p>
+{% else %}
+<!-- Debug: No blogs/ or projects/ found in URL -->
+<p class="back-to-blog">
+    <a href="{{ 'blogs/' | url }}">← Back to Blog (default)</a>
+</p>
+{% endif %}
+{% endif %}
+
+{{ super() }}
+{% endblock %}
