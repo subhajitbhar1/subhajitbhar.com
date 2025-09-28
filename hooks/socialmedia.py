@@ -6,7 +6,7 @@ x_intent = "https://x.com/intent/tweet"
 fb_sharer = "https://www.facebook.com/sharer/sharer.php"
 linkedin_sharer = "https://www.linkedin.com/shareArticle"
 
-include = re.compile(r"blog/(?!archive|category).+")
+include = re.compile(r"(blogs|projects)/(?!archive|category).+")
 
 def on_page_markdown(markdown, **kwargs):
     page = kwargs['page']

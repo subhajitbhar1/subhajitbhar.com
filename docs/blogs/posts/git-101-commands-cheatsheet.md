@@ -7,7 +7,7 @@ slug: git-101-cheat-sheet
 date: 
     created: 2025-09-24
 categories:
-    - Tech
+    - DevOps
 tags:
     - Git
     - Cheat Sheet

@@ -7,7 +7,6 @@ slug: api-101-beginner-guide
 date:
     created: 2025-09-24
 categories:
-    - Tech
     - Python
 tags:
     - API

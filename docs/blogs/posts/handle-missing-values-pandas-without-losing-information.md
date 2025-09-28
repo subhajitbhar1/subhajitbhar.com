@@ -7,12 +7,11 @@ slug: pandas-missing-values
 date: 
     created: 2025-09-17
 categories:
-    - Test
-    - Tech
     - Python
+    - Data Science
 tags:
     - Test
-    - Tech
+    - Data Science
     - Python
 twitter_card: "summary_large_image"
 ---
