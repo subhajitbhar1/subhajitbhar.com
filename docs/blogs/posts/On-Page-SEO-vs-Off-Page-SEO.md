@@ -3,7 +3,7 @@ authors:
     - subhajit
 title: On-Page SEO vs Off-Page SEO
 description: On-Page and Off-Page SEO are key to enhancing website visibility and ranking, each with distinct roles in optimization.
-slug: on-page-seo-vs-off-page-seo
+slug: On-Page-SEO-vs-Off-Page-SEO
 date:
     created: 2025-07-12
 categories:
