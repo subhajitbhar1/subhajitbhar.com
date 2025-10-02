@@ -71,6 +71,7 @@ plugins:
             - Automation
             - Freelancing   
             - Physics      
+            - SEO
 
     - tags:
           tags_file: tags.md
