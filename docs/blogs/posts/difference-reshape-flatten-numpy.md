@@ -17,6 +17,7 @@ twitter_card: "summary_large_image"
 ---
 NumPy's `reshape()` and `flatten()` are both used for array manipulation, but they serve different purposes and have distinct behaviors. This guide explains when and how to use each method effectively.
 
+<!-- more -->
 ## What is reshape() in NumPy
 
 The `reshape()` method changes the shape of an array without changing its data. It returns a new view of the array with a different shape when possible.
