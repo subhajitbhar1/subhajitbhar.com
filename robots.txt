@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /blogs/
+Allow: /tags/
+Allow: /projects/
+Allow: /testimonials/
+
+# Block specific areas (examples)
+Disallow: /admin/
+Disallow: /.git/
+
+# Sitemap
+Sitemap: https://subhajitbhar.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
