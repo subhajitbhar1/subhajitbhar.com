@@ -1,6 +1,6 @@
 ---
 title: Home
-description: Home page
+description: Freelance Data Scientist with focus on OCR, NLP, LLM, RAG, knowledge base
 slug: home
 date:
     created: 2025-09-28
