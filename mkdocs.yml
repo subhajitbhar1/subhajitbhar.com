@@ -32,7 +32,7 @@ theme:
 
 nav:
     - index.md
-    - Blog: 
+    - Blogs: 
       - blogs/index.md
     - Projects: /projects/
     - Tags: tags.md
