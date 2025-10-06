@@ -1,4 +1,4 @@
-# blog.subhajitbhar.com
+# subhajitbhar.com
 
 This is the source code for the [subhajitbhar.com](https://subhajitbhar.com).
 
