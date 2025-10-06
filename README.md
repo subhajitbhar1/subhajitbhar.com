@@ -1,6 +1,6 @@
 # blog.subhajitbhar.com
 
-This is the source code for the [blog.subhajitbhar.com](https://blog.subhajitbhar.com).
+This is the source code for the [subhajitbhar.com](https://subhajitbhar.com).
 
 ## How to run the project
 
