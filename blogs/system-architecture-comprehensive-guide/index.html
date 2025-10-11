@@ -1,0 +1,1612 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Practical guide to system architecture covering core concepts, patterns, trade‑offs, diagrams, and production checklists.">
+      
+      
+      
+        <link rel="canonical" href="https://subhajitbhar.com/blogs/system-architecture-comprehensive-guide/">
+      
+      
+        <link rel="prev" href="../version-control-git-github/">
+      
+      
+        <link rel="next" href="../rag-for-knowledge-intensive-nlp-tasks/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>System Architecture — A Comprehensive, Practical Guide - Subhajit Bhar</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../None">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="System Architecture — A Comprehensive, Practical Guide - Subhajit Bhar" >
+      
+        <meta  property="og:description"  content="Practical guide to system architecture covering core concepts, patterns, trade‑offs, diagrams, and production checklists." >
+      
+        <meta  property="og:image"  content="https://subhajitbhar.com/assets/images/social/blogs/posts/system-architecture-comprehensive-guide.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://subhajitbhar.com/blogs/system-architecture-comprehensive-guide/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="System Architecture — A Comprehensive, Practical Guide - Subhajit Bhar" >
+      
+        <meta  name="twitter:description"  content="Practical guide to system architecture covering core concepts, patterns, trade‑offs, diagrams, and production checklists." >
+      
+        <meta  name="twitter:image"  content="https://subhajitbhar.com/assets/images/social/blogs/posts/system-architecture-comprehensive-guide.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-system-architecture" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Subhajit Bhar" class="md-header__button md-logo" aria-label="Subhajit Bhar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Subhajit Bhar
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              System Architecture — A Comprehensive, Practical Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/subhajitbhar1/subhajitbhar.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Blogs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/projects/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tags/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tags
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../testimonials/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Testimonials
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Subhajit Bhar" class="md-nav__button md-logo" aria-label="Subhajit Bhar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Subhajit Bhar
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/subhajitbhar1/subhajitbhar.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blogs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Blogs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Blogs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Categories
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/ai-ml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI ML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/data-science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Science
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/devops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DevOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/nlp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NLP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/seo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SEO
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/system-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Projects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testimonials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testimonials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is System Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-architecture-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference Architecture at a Glance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-architectural-styles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Architectural Styles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-and-consistency-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data and Consistency Fundamentals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data and Consistency Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typical-readwrite-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typical Read/Write Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scalability-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability Patterns
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reliability-and-resilience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reliability and Resilience
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datastores-and-when-to-use-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datastores and When to Use Them
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messaging-and-async-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Messaging and Async Workflows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-gateway-bff-and-edge" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Gateway, BFF, and Edge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-by-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security by Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observability-and-operability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observability and Operability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployments-and-release-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployments and Release Strategies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cost-awareness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cost Awareness
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nonfunctional-requirements-nfr-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non‑Functional Requirements (NFR) Checklist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-decision-records-adr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision Records (ADR)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-questions-and-straight-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Questions and Straight Answers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#production-readiness-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Production Readiness Checklist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-request-journey-through-the-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Request Journey Through the Stack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-evolve-architecture-safely" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Evolve Architecture Safely
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="../../img/profile.webp" alt="Subhajit Bhar">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          <a href="https://www.subhajitbhar.com">Subhajit Bhar</a>
+                        
+                      </strong>
+                      <br>
+                      Freelance Data Scientist
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2025-09-24 00:00:00+00:00" class="md-ellipsis">September 24, 2025</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            in
+                            
+                              <a href="../category/system-design/">System Design</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              6 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <a href="../../tags/#tag:architecture" class="md-tag">Architecture</a>
+      
+    
+      
+      
+      
+        <a href="../../tags/#tag:reliability" class="md-tag">Reliability</a>
+      
+    
+      
+      
+      
+        <a href="../../tags/#tag:scalability" class="md-tag">Scalability</a>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+  <h1>System Architecture — A Comprehensive, Practical Guide</h1>
+
+<p>Designing and evolving system architecture is about making informed trade‑offs. This guide provides a practical, opinionated walkthrough of the core concepts, patterns, and decisions you need to build scalable, reliable, and cost‑efficient systems—plus answers to the most common questions engineers and architects ask.</p>
+<!-- more -->
+
+<h2 id="what-is-system-architecture">What Is System Architecture</h2>
+<p>System architecture describes the high‑level structure of a software system: the components, their responsibilities, and how they interact. It balances non‑functional requirements (NFRs) such as scalability, reliability, performance, security, operability, and cost.</p>
+<ul>
+<li><strong>Functional requirements</strong>: What the system does (features, endpoints, business rules).</li>
+<li><strong>Non‑functional requirements (NFRs)</strong>: How well the system does it (SLOs, throughput, latency, availability, durability, security, maintainability).</li>
+</ul>
+<h2 id="reference-architecture-at-a-glance">Reference Architecture at a Glance</h2>
+<pre class="mermaid"><code>%%{init: { 'flowchart': { 'htmlLabels': true } }}%%
+flowchart TB
+    subgraph Client
+        U[Web / Mobile / API Client]
+    end
+
+    subgraph Edge
+        CDN[CDN]
+        WAF[WAF]
+        LB[Load Balancer]
+        AG[API Gateway]
+    end
+
+    subgraph Services
+        A["App Service&lt;br/&gt;(Monolith or Microservices)"]
+        MQ["Message Broker&lt;br/&gt;(Kafka/RabbitMQ)"]
+        CRON[Schedulers / Workers]
+    end
+
+    subgraph Data
+        DB[(Primary DB \n SQL/NoSQL)]
+        CACHE[(Cache \n Redis/Memcached)]
+        SEARCH[(Search \n ES/OpenSearch)]
+        OLAP[(Analytics DW \n BigQuery/Redshift)]
+        OBJ[(Object Storage \n S3/GCS)]
+    end
+
+    subgraph Observability
+        LOGS[Logs]
+        METRICS[Metrics]
+        TRACES[Traces]
+    end
+
+    U --&gt; CDN --&gt; WAF --&gt; LB --&gt; AG --&gt; A
+    A --&gt; CACHE
+    CACHE --&gt; A
+    A --&gt; DB
+    DB --&gt; A
+    A --&gt; MQ
+    MQ --&gt; CRON
+    A --&gt; SEARCH
+    A --&gt; OBJ
+    CRON --&gt; DB
+    CRON --&gt; OBJ
+
+    A --&gt; LOGS
+    A --&gt; METRICS
+    A --&gt; TRACES</code></pre>
+<h2 id="core-architectural-styles">Core Architectural Styles</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Layered (N‑Tier)</label><label for="__tabbed_1_2">Modular Monolith</label><label for="__tabbed_1_3">Microservices</label><label for="__tabbed_1_4">Event‑Driven</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><strong>Idea</strong>: Separate presentation, application, domain, and data layers.</li>
+<li><strong>Pros</strong>: Simple, clear separation; great for small to medium apps.</li>
+<li><strong>Cons</strong>: Can devolve into an anemic domain; boundaries erode over time.</li>
+<li><strong>Use when</strong>: Team is small; domain is evolving; deployment simplicity matters.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Idea</strong>: One deployable unit with strict internal modules and boundaries.</li>
+<li><strong>Pros</strong>: Transactional consistency, simple ops, easier refactoring.</li>
+<li><strong>Cons</strong>: One failure can impact more; scaling is coarse.</li>
+<li><strong>Use when</strong>: You want speed of delivery with discipline; future microservices possible.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Idea</strong>: Independent services with clear bounded contexts.</li>
+<li><strong>Pros</strong>: Independent scaling/deployment; team autonomy; polyglot persistence.</li>
+<li><strong>Cons</strong>: Operational complexity; distributed transactions; consistency challenges.</li>
+<li><strong>Use when</strong>: Org is large; domains are well understood; platform engineering exists.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Idea</strong>: Publish/subscribe events for loose coupling and async processing.</li>
+<li><strong>Pros</strong>: Scalable, resilient, extensible.</li>
+<li><strong>Cons</strong>: Debuggability; eventual consistency; schema/versioning discipline needed.</li>
+<li><strong>Use when</strong>: High throughput, integrations, or async workflows are key.</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="data-and-consistency-fundamentals">Data and Consistency Fundamentals</h2>
+<ul>
+<li><strong>ACID vs BASE</strong>: Strong consistency vs eventual consistency trade‑off.</li>
+<li><strong>CAP Theorem</strong>: Under network partitions, pick availability or consistency.</li>
+<li><strong>Consistency models</strong>: Strong, causal, read‑your‑writes, eventual.</li>
+<li><strong>Idempotency</strong>: Same request can be safely retried; key for reliability.</li>
+<li><strong>Exactly‑once is aspirational</strong>: Aim for at‑least‑once + idempotency.</li>
+</ul>
+<h3 id="typical-readwrite-flow">Typical Read/Write Flow</h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant C as Client
+    participant G as API Gateway
+    participant S as Service
+    participant R as Cache (Redis)
+    participant D as Database
+
+    C-&gt;&gt;G: GET /products/123
+    G-&gt;&gt;S: Forward request
+    S-&gt;&gt;R: GET product:123
+    alt Cache hit
+        R--&gt;&gt;S: Value
+        S--&gt;&gt;G: 200 OK + Data
+        G--&gt;&gt;C: 200 OK + Data
+    else Cache miss
+        R--&gt;&gt;S: null
+        S-&gt;&gt;D: SELECT * FROM products WHERE id=123
+        D--&gt;&gt;S: Row
+        S-&gt;&gt;R: SET product:123 (TTL=300s)
+        S--&gt;&gt;G: 200 OK + Data
+        G--&gt;&gt;C: 200 OK + Data
+    end</code></pre>
+<h2 id="scalability-patterns">Scalability Patterns</h2>
+<ul>
+<li><strong>Vertical scaling</strong>: Bigger machines; quick win; diminishing returns.</li>
+<li><strong>Horizontal scaling</strong>: More instances; needs statelessness and externalized state.</li>
+<li><strong>Partitioning/Sharding</strong>: Split data by key or range; consider rebalancing.</li>
+<li><strong>Replication</strong>: Read replicas for scale; async replicas increase staleness risk.</li>
+<li><strong>Caching</strong>: CDN, application cache (Redis), database cache; always set TTLs and invalidation rules.</li>
+<li><strong>Queueing &amp; Backpressure</strong>: Smooth spikes with buffers; implement consumer concurrency and rate limits.</li>
+</ul>
+<h2 id="reliability-and-resilience">Reliability and Resilience</h2>
+<ul>
+<li><strong>Timeouts and Retries</strong>: Always set sane timeouts; use exponential backoff + jitter.</li>
+<li><strong>Circuit Breakers</strong>: Fail fast when dependencies degrade; protect resources.</li>
+<li><strong>Bulkheads</strong>: Isolate resource pools (threads/connections) per dependency.</li>
+<li><strong>Dead‑letter queues</strong>: Capture poison messages for later review.</li>
+<li><strong>Graceful degradation</strong>: Serve cached or partial data when possible.</li>
+</ul>
+<h2 id="datastores-and-when-to-use-them">Datastores and When to Use Them</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:6"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><input id="__tabbed_2_6" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Relational (PostgreSQL/MySQL)</label><label for="__tabbed_2_2">Document (MongoDB/Firestore)</label><label for="__tabbed_2_3">Key‑Value (Redis/Memcached)</label><label for="__tabbed_2_4">Wide‑Column (Cassandra/Scylla)</label><label for="__tabbed_2_5">Search (Elasticsearch/OpenSearch)</label><label for="__tabbed_2_6">Analytics (BigQuery/Redshift/Snowflake)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Strong consistency, joins, transactions. Best for OLTP and complex relationships.</li>
+<li>Scale via read replicas, partitioning, and careful indexing.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Flexible schemas, nested documents. Great for content/user profiles.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Sub‑millisecond reads/writes; perfect for caching, sessions, locks.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>High write throughput, linear horizontal scalability; model queries up‑front.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Full‑text search, aggregations; eventual consistency; pipeline ingestion.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>OLAP, columnar storage, separation of storage/compute; not for OLTP.</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="messaging-and-async-workflows">Messaging and Async Workflows</h2>
+<ul>
+<li><strong>Brokers</strong>: Kafka (log‑based, high throughput), RabbitMQ (AMQP, routing), SQS/PubSub (managed).</li>
+<li><strong>Patterns</strong>: Pub/Sub, Work Queues, Event Sourcing, CQRS, Saga for distributed transactions.</li>
+</ul>
+<pre class="mermaid"><code>stateDiagram-v2
+    [*] --&gt; Pending
+    Pending --&gt; Reserved: Reserve inventory
+    Reserved --&gt; Paid: Payment succeeded
+    Reserved --&gt; Pending: Payment failed (retry)
+    Paid --&gt; Shipped: Fulfill order
+    Shipped --&gt; [*]</code></pre>
+<h2 id="api-gateway-bff-and-edge">API Gateway, BFF, and Edge</h2>
+<ul>
+<li><strong>API Gateway</strong>: Routing, authentication, rate limiting, request/response transformation.</li>
+<li><strong>BFF (Backend for Frontend)</strong>: Tailored APIs per client (web/mobile) to reduce over/under‑fetching.</li>
+<li><strong>Edge (CDN/WAF)</strong>: Caching static and semi‑static content; threat mitigation at the perimeter.</li>
+</ul>
+<h2 id="security-by-design">Security by Design</h2>
+<ul>
+<li><strong>AuthN/Z</strong>: OAuth 2.1/OIDC for delegated auth; enforce least privilege and scopes.</li>
+<li><strong>Data protection</strong>: TLS in transit; at‑rest encryption; KMS‑managed keys.</li>
+<li><strong>Secrets</strong>: Use secret managers; never store secrets in env files or images.</li>
+<li><strong>Input validation</strong>: Validate at the edge and service boundary; sanitize outputs.</li>
+<li><strong>Auditability</strong>: Immutable, tamper‑evident logs for security events.</li>
+</ul>
+<h2 id="observability-and-operability">Observability and Operability</h2>
+<ul>
+<li><strong>Metrics</strong>: RED/USE/Golden signals; per‑service SLOs with error budgets.</li>
+<li><strong>Logs</strong>: Structured JSON, correlation IDs; centralize and retain with budgets.</li>
+<li><strong>Traces</strong>: Distributed tracing with consistent propagation headers.</li>
+<li><strong>Runbooks</strong>: Document failure modes and standard operating procedures.</li>
+</ul>
+<h2 id="deployments-and-release-strategies">Deployments and Release Strategies</h2>
+<ul>
+<li><strong>Blue/Green</strong>: Two production environments; instant switch; higher cost.</li>
+<li><strong>Canary</strong>: Gradual rollout with automated rollback on regression.</li>
+<li><strong>Feature Flags</strong>: Decouple deploy from release; enable progressive delivery.</li>
+</ul>
+<h2 id="cost-awareness">Cost Awareness</h2>
+<ul>
+<li><strong>Right‑sizing</strong>: Match instance sizes to baselines; autoscale on credible signals.</li>
+<li><strong>Storage classes</strong>: Hot vs warm vs cold tiers; lifecycle policies.</li>
+<li><strong>Data egress</strong>: Minimize cross‑region and cross‑cloud traffic.</li>
+</ul>
+<h2 id="nonfunctional-requirements-nfr-checklist">Non‑Functional Requirements (NFR) Checklist</h2>
+<ul>
+<li>SLOs for latency, availability, and error rates defined and monitored</li>
+<li>Capacity plan and autoscaling policies validated under load tests</li>
+<li>Backups, restore drills, and disaster recovery RPO/RTO defined</li>
+<li>Timeouts, retries with backoff, circuit breakers configured</li>
+<li>Idempotency for writes and exactly‑once semantics avoided</li>
+<li>Rate limits, quotas, and surge protection in place</li>
+<li>Security scanning (SAST/DAST), dependencies, base image hardening</li>
+<li>Observability: metrics, logs, traces, dashboards, alerts, runbooks</li>
+<li>Cost budgets and anomaly detection alerts</li>
+</ul>
+<h2 id="architecture-decision-records-adr">Architecture Decision Records (ADR)</h2>
+<p>Document trade‑offs explicitly. A lightweight ADR captures context, decision, alternatives, and consequences. Keep ADRs short, versioned, and linked to incidents or KPIs when decisions change.</p>
+<h2 id="common-questions-and-straight-answers">Common Questions and Straight Answers</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:10"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><input id="__tabbed_3_6" name="__tabbed_3" type="radio" /><input id="__tabbed_3_7" name="__tabbed_3" type="radio" /><input id="__tabbed_3_8" name="__tabbed_3" type="radio" /><input id="__tabbed_3_9" name="__tabbed_3" type="radio" /><input id="__tabbed_3_10" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Should I start with microservices?</label><label for="__tabbed_3_2">SQL or NoSQL?</label><label for="__tabbed_3_3">How many replicas do I need?</label><label for="__tabbed_3_4">How do I ensure safe retries?</label><label for="__tabbed_3_5">What about exactly‑once delivery?</label><label for="__tabbed_3_6">Do I need a message broker?</label><label for="__tabbed_3_7">How do I handle schema changes?</label><label for="__tabbed_3_8">When should I shard?</label><label for="__tabbed_3_9">How do I choose cache TTLs?</label><label for="__tabbed_3_10">What causes cascading failures?</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>No. Start with a well‑structured modular monolith. Split only when boundaries and scaling pain are clear.</p>
+</div>
+<div class="tabbed-block">
+<p>Default to SQL. Move specific workloads to NoSQL if access patterns or scale demand it.</p>
+</div>
+<div class="tabbed-block">
+<p>At least 2 per AZ for HA; 3 for quorum‑based systems. Validate with load tests.</p>
+</div>
+<div class="tabbed-block">
+<p>Make write endpoints idempotent (idempotency keys) and use backoff + jitter.</p>
+</div>
+<div class="tabbed-block">
+<p>Prefer at‑least‑once with idempotent consumers. Exactly‑once is costly and brittle in practice.</p>
+</div>
+<div class="tabbed-block">
+<p>Use one for async workloads, spikes, or integrations. Avoid if synchronous request/response suffices and throughput is modest.</p>
+</div>
+<div class="tabbed-block">
+<p>Backward‑compatible changes first (additive), deploy readers, then writers; run dual‑writes if needed.</p>
+</div>
+<div class="tabbed-block">
+<p>Only after exhausting vertical scale and read replicas. Choose a shard key that evenly distributes load and minimizes cross‑shard queries.</p>
+</div>
+<div class="tabbed-block">
+<p>Base on data volatility and correctness tolerance. Prefer short TTLs and soft invalidation over long stale data.</p>
+</div>
+<div class="tabbed-block">
+<p>Tight coupling, unbounded concurrency, and missing timeouts. Use bulkheads, backpressure, and circuit breakers.</p>
+</div>
+</div>
+</div>
+<h2 id="production-readiness-checklist">Production Readiness Checklist</h2>
+<ul>
+<li>Health checks (liveness/readiness/startup) and graceful shutdown</li>
+<li>Config via env/secret manager; immutable container images</li>
+<li>Canary strategy and automated rollback hooks</li>
+<li>Per‑endpoint SLOs and error budgets defined</li>
+<li>Rate limiting and abuse detection at the edge</li>
+<li>Data retention, privacy, PII handling, and audit trails</li>
+<li>Access control: least privilege IAM, scoped tokens, and short‑lived creds</li>
+<li>Runbook for all critical failure modes; on‑call rotation defined</li>
+</ul>
+<h2 id="example-request-journey-through-the-stack">Example: Request Journey Through the Stack</h2>
+<pre class="mermaid"><code>flowchart LR
+    C[Client] --&gt; E[Edge: CDN/WAF]
+    E --&gt; L[Load Balancer]
+    L --&gt; G[API Gateway]
+    G --&gt; S[Service]
+    S --&gt;|read| Rc[(Redis Cache)]
+    S --&gt;|write| Db[(Primary DB)]
+    S --&gt;|async| Q[(Broker)]
+    Q --&gt; W[Worker]
+    W --&gt; Db</code></pre>
+<h2 id="how-to-evolve-architecture-safely">How to Evolve Architecture Safely</h2>
+<ol>
+<li>Define KPIs and SLOs. Measure before you change.</li>
+<li>Make small, reversible steps. Use flags and canaries.</li>
+<li>Prefer schema‑first and contract tests for APIs and events.</li>
+<li>Automate. Everything. Testing, security scans, provisioning, rollbacks.</li>
+<li>Document decisions (ADRs) and post‑incident learnings.</li>
+</ol>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Designing Data‑Intensive Applications (Kleppmann)</li>
+<li>Site Reliability Engineering (Beyer et al.)</li>
+<li>Release It! (Nygard)</li>
+<li>The Twelve‑Factor App</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Good architecture maximizes option value by keeping systems observable, evolvable, and resilient. Start simple, measure relentlessly, and introduce complexity only when the data demands it. The best designs are those your team can operate confidently under failure.</p>
+<hr />
+<p><strong>Share this post:</strong></p>
+<p><a class="md-button" href="https://x.com/intent/tweet?text=System%20Architecture%20%E2%80%94%20A%20Comprehensive%2C%20Practical%20Guide%0A&amp;url=https://subhajitbhar.com/blogs/system-architecture-comprehensive-guide/">Share on <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></span></a>
+<a class="md-button" href="https://www.facebook.com/sharer/sharer.php?u=https://subhajitbhar.com/blogs/system-architecture-comprehensive-guide/">Share on <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02"/></svg></span></a></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../version-control-git-github/" class="md-footer__link md-footer__link--prev" aria-label="Previous: The Definitive Guide to Version Control with Git and GitHub">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                The Definitive Guide to Version Control with Git and GitHub
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../rag-for-knowledge-intensive-nlp-tasks/" class="md-footer__link md-footer__link--next" aria-label="Next: RAG for Knowledge-Intensive Tasks">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                RAG for Knowledge-Intensive Tasks
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Subhajit Bhar
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://x.com/SubhajitBhar1" target="_blank" rel="noopener" title="x.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/SubhajitBhar1" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/SubhajitBhar1" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://medium.com/@SubhajitBhar1" target="_blank" rel="noopener" title="medium.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M369.4 32c43.4 0 78.6 35.2 78.6 78.6v83.8c-1.9-.1-3.8-.2-5.7-.2h-.4c-10 0-22.3 2.4-31.1 6.8-10 4.6-18.7 11.5-26 20.6-11.8 14.6-18.9 34.3-20.6 56.4-.1.7-.1 1.3-.2 2s-.1 1.2-.1 1.9c-.1 1.2-.1 2.4-.1 3.6 0 1.9-.1 3.8 0 5.8 1.2 50.1 28.2 90.2 76.3 90.2 2.7 0 5.3-.1 7.9-.4v20.4c0 43.4-35.2 78.6-78.6 78.6L78.6 480C35.2 480 0 444.8 0 401.4V110.6C0 67.2 35.2 32 78.6 32zM82.3 138.9l.3.1c13.2 3 19.8 7.4 19.8 23.4v187.2c0 16-6.7 20.4-19.9 23.4l-.3.1v2.8H135v-2.8l-.3-.1c-13.2-3-19.9-7.4-19.9-23.4V173.3l86.1 202.5h4.9l88.6-208.2v186.6c-1.1 12.6-7.8 16.5-19.7 19.2l-.3.1v2.7h91.9v-2.7l-.3-.1c-11.9-2.7-18.7-6.6-19.9-19.2l-.1-191.8h.1c0-16 6.7-20.4 19.9-23.4l.3-.1v-2.7h-72.2l-67 157.4-67-157.4H82.3zM448 340.3c-25.1-7.4-43-35.1-41.2-67.8h41.1v67.8zm-6.4-135.6c2.3 0 4.4.3 6.4.9V263h-40.2c1.5-33.6 13.6-57.9 33.8-58.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.upwork.com/freelancers/subhajitbhar1" target="_blank" rel="noopener" title="www.upwork.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M493.9 295.6c-50.3 0-83.5-38.9-92.8-53.9 11.9-95.3 46.8-125.4 92.8-125.4 45.5 0 80.9 36.4 80.9 89.7s-35.4 89.7-80.9 89.7zm0-237.8c-81.9 0-127.8 53.4-141 108.4-14.9-28-25.9-65.5-34.5-100.3H205.2v141c0 51.1-23.3 89-68.8 89s-71.6-37.8-71.6-89l.5-141H0v141C0 248 13.3 285.3 37.6 312c25 27.5 59.2 41.8 98.8 41.8 78.8 0 133.8-60.4 133.8-146.9v-94.8c8.2 31.2 27.8 91.1 65.3 143.6l-35 199.4h66.4L390 313.8c7.6 6.3 15.7 12 24.2 17 22.2 14 47.7 21.9 73.9 22.8 0 0 4 .2 6.1.2 81.2 0 145.9-62.9 145.9-147.8s-64.8-148.1-146-148.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.footer"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
