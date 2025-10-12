@@ -11,7 +11,7 @@ categories:
     - NLP
 meta:
     - name: keywords
-      content: NLP, Entity Matching, Python, IR
+      content: Entity Matching, Fuzzy Search, NLP
 twitter_card: "summary_large_image"
 ---
 

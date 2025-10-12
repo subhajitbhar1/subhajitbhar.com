@@ -10,7 +10,7 @@ categories:
     - AI ML
 meta:
     - name: keywords
-      content: LangChain, RAG, LLMs, Python, Evaluation, Embeddings
+      content: LangChain, RAG Architecture, LLM Implementation
 twitter_card: "summary_large_image"
 ---
 

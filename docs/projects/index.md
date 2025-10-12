@@ -6,7 +6,7 @@ date:
     created: 2025-09-28
 meta: 
  - name: keywords
-   content: Subhajit Bhar, freelance data scientist, projects, data science, AI, ML, NLP, RAG, knowledge base
+   content: Subhajit Bhar, data science projects, machine learning portfolio
 hide:
   - navigation
   - toc

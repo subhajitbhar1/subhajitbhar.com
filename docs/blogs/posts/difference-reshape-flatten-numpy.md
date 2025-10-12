@@ -10,7 +10,7 @@ categories:
     - Python
 meta:
     - name: keywords
-      content: NumPy, Python, Array Manipulation, Data Science
+      content: NumPy reshape, NumPy flatten, Array Manipulation
 twitter_card: "summary_large_image"
 ---
 NumPy's `reshape()` and `flatten()` are both used for array manipulation, but they serve different purposes and have distinct behaviors. This guide explains when and how to use each method effectively.

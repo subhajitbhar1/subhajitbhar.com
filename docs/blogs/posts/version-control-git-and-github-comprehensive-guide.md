@@ -10,7 +10,7 @@ categories:
     - DevOps
 meta:
     - name: keywords
-      content: Git, GitHub, Version Control, DevOps
+      content: Git Tutorial, GitHub Guide, Version Control Best Practices
 twitter_card: "summary_large_image"
 ---
 

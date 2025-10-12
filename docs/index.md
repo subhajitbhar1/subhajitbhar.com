@@ -4,7 +4,7 @@ hide:
   - toc
 meta:
  - name: keywords
-   content: Subhajit Bhar, freelance data scientist, machine learning engineer, data automation, interactive dashboards, machine learning systems, NLP, RAG, Computer Vision
+   content: Subhajit Bhar, freelance data scientist, machine learning engineer, NLP, Computer Vision
 ---
 
 <div style="text-align: center; "><img src="../img/profile.webp" alt="Circular Image" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; ">

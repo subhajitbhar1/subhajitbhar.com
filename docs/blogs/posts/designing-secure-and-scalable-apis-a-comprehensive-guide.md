@@ -11,7 +11,7 @@ categories:
     - System Design
 meta:
     - name: keywords
-      content: API, Security, FastAPI, Design
+      content: Secure API Design, Scalable APIs, FastAPI Best Practices
 twitter_card: "summary_large_image"
 ---
 

@@ -6,7 +6,7 @@ date:
     created: 2025-09-28
 meta: 
  - name: keywords
-   content: Data Science, Machine Learning, AI, NLP, RAG, Computer Vision, Python
+   content: Data Science Blog, Machine Learning Tutorials, Python
 ---
 
 # Blogs

@@ -11,7 +11,7 @@ categories:
     - Data Science
 meta:
     - name: keywords
-      content: Python, Data Science, Outliers Detection
+      content: Outlier Detection, IQR Method, Z-Score
 twitter_card: "summary_large_image"
 ---
 

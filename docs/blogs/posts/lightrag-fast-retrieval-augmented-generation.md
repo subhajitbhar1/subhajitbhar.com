@@ -10,7 +10,7 @@ categories:
     - AI ML
 meta:
     - name: keywords
-      content: RAG, LightRAG, NLP, Open Source, Evaluation, Embeddings
+      content: LightRAG, Retrieval Augmented Generation, RAG Implementation
 twitter_card: "summary_large_image"
 ---
 

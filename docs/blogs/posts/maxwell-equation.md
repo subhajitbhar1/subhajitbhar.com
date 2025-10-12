@@ -10,7 +10,7 @@ categories:
     - Physics
 meta:
     - name: keywords
-      content: Physics, Electromagnetism, Mathematics, Science, Test
+      content: Maxwell Equations, Electromagnetism, Physics
 twitter_card: "summary_large_image"
 ---
 

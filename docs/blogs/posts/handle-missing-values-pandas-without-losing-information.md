@@ -11,7 +11,7 @@ categories:
     - Data Science
 meta:
     - name: keywords
-      content: Test, Data Science, Python
+      content: Pandas, Missing Values, Data Cleaning
 twitter_card: "summary_large_image"
 ---
 

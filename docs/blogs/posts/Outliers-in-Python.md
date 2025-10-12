@@ -11,7 +11,7 @@ categories:
     - Data Science
 meta:
     - name: keywords
-      content: Outliers, Python, Data Science, Statistics, Machine Learning
+      content: Outlier Detection, Python Statistics, Data Analysis
 
 twitter_card: "summary_large_image"
 ---

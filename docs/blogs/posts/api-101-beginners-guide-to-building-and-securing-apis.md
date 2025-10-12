@@ -10,7 +10,7 @@ categories:
     - Python
 meta:
     - name: keywords
-      content: API design, FastAPI, Security
+      content: API Design Basics, FastAPI Tutorial, API Security
 twitter_card: "summary_large_image"
 ---
 

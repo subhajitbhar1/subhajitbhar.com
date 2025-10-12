@@ -10,7 +10,7 @@ categories:
     - DevOps
 meta:
     - name: keywords
-      content: Git, Cheat Sheet, Version Control
+      content: Git Commands, Git Cheat Sheet, Git Workflows
 twitter_card: "summary_large_image"
 ---
 

@@ -11,7 +11,7 @@ categories:
     - NLP
 meta:
     - name: keywords
-      content: NLP, Summarization, Evaluation, Python
+      content: Document Summarization, NLP Evaluation, Text Summarization
 twitter_card: "summary_large_image"
 ---
 

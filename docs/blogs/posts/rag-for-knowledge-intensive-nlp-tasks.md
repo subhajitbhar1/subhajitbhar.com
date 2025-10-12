@@ -10,7 +10,7 @@ categories:
     - AI ML
 meta:
     - name: keywords
-      content: RAG, NLP, Knowledge-Intensive, Retrieval-Augmented Generation
+      content: Retrieval Augmented Generation, RAG, Knowledge-Intensive NLP
 twitter_card: "summary_large_image"
 ---
 Picture this: You're asking an AI about cancer treatments. It sounds super confident and gives you detailed answers. But here's the problem — it just made up a medical study that doesn't exist.

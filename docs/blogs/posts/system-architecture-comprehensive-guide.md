@@ -10,7 +10,7 @@ categories:
     - System Design
 meta:
     - name: keywords
-      content: Architecture, Scalability, Reliability
+      content: System Architecture, Scalable Design, System Reliability
 twitter_card: "summary_large_image"
 ---
 
