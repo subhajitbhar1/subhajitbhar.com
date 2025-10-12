@@ -37,9 +37,9 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
-    - navigation.path
+    # - navigation.instant.prefetch # insider feature
+    # - navigation.instant.progress
+    # - navigation.path # insider feature
     - navigation.top
     - navigation.tracking
 
@@ -48,7 +48,6 @@ nav:
   - Blogs:
       - blogs/index.md
   - Projects: /projects/
-  - Tags: tags.md
   - Testimonials: testimonials.md
 
 hooks:
@@ -78,6 +77,8 @@ plugins:
       categories_allowed:
         - Python
         - Data Science
+        - Artificial Intelligence
+        - Machine Learning
         - AI ML
         - DevOps
         - System Design
@@ -85,10 +86,9 @@ plugins:
         - Freelancing
         - Physics
         - SEO
+        - Natural Language Processing
         - NLP
-
-  - tags:
-      tags_file: tags.md
+        - Computer Vision
   - blog:
       blog_dir: projects
       blog_toc: true
@@ -100,11 +100,32 @@ plugins:
       pagination_per_page: 10
 
 markdown_extensions:
+  # --- Python Markdown Extensions ---
+  - abbr
+  - admonition
+  - attr_list
+  - footnotes # add inline footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  # --- Python Markdown Extensions ---
+  - pymdownx.betterem
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.blocks.caption
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
@@ -116,16 +137,7 @@ markdown_extensions:
           pygments_lang_class: true
   - pymdownx.tabbed:
       alternate_style: true
-  - attr_list
-  - md_in_html
-  - pymdownx.blocks.caption
-  - admonition
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.arithmatex:
-      generic: true
+  - pymdownx.tilde
 
 extra_javascript:
   - javascripts/katex.js

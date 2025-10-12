@@ -1,16 +1,10 @@
 ---
-title: Home
-description: Freelance Data Scientist with focus on OCR, NLP, LLM, RAG, knowledge base
-slug: home
-date:
-    created: 2025-09-28
-meta: 
- - name: robots
-   content: index, follow
+hide:
+  - navigation
+  - toc
+meta:
  - name: keywords
-   content: Subhajit Bhar, freelance data scientist, OCR, NLP, LLM, RAG, knowledge base
- - name: Publisher
-   content: Subhajit Bhar
+   content: New Key
 ---
 
 
