@@ -56,10 +56,6 @@ if __name__ == "__main__":
 Related: RAG and data quality posts to improve chunking/grounding: 
 [/blogs/does-langchain-use-rag](/blogs/does-langchain-use-rag), [/blogs/lightrag-fast-retrieval-augmented-generation](/blogs/lightrag-fast-retrieval-augmented-generation), and [/blogs/detect-remove-outliers-python-iqr-zscore](/blogs/detect-remove-outliers-python-iqr-zscore).
 
-## CTA
-
-Need production summarization with scorecards and human-in-the-loop review? [Work with me →](/services)
-
 ## Architecture
 
 ![Summarization workflow: ingest → segment → extractive baseline → abstractive refine → scoring → human review](/images/nlp-summarization-architecture.png)

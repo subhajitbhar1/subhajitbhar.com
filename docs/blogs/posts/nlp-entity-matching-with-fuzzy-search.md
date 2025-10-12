@@ -70,10 +70,6 @@ if __name__ == "__main__":
 - Accept ≥ 0.8 as confident match; 0.6–0.8 → manual review; < 0.6 reject.
 - Evaluate with precision@1 and manual spot-checks.
 
-## CTA
-
-Need entity resolution at scale with human-in-the-loop QA? [Work with me →](/services)
-
 ## Architecture & workflow
 
 ![Entity matching: TF-IDF candidates → JW re-rank → Embedding tie-breaker → thresholds → human review](/images/nlp-entity-matching-architecture.png)

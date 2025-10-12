@@ -183,8 +183,6 @@ When to stick with LangChain: you need tracing, callbacks, streaming tools, or p
 - 15–20% cost reduction via smaller contexts and fewer retries.
 - Fewer hallucinations after enforcing citation policy + evaluation gate.
 
-## CTA — ship a lean RAG that meets SLAs
+## Shipping Lean RAG Systems
 
-Need predictable latency and a minimal stack? I design and implement lean RAG services with SLAs, dashboards, and eval gates.
-
-[Work with me →](/services)
+For production RAG systems, focus on predictable latency and a minimal stack. Design lean RAG services with clear SLAs, proper dashboards, and evaluation gates to ensure reliability and performance.

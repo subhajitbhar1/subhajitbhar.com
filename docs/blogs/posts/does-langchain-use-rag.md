@@ -225,8 +225,6 @@ Garbage in → garbage out. Before embedding:
 - **Which vector store should I pick?** FAISS for local/dev, Chroma for fast prototyping, pgvector for Postgres-native stacks.
 - **Which model works best?** Start with `gpt-4o-mini` for grounded Q&A. If latency/cost constraints are strict, evaluate smaller models with a re-ranker.
 
-## CTA — build a RAG that holds up in production
+## Building RAG in Production
 
-If you need grounded answers with citations, predictable latency, and an evaluation gate, I design and implement RAG systems with clear SLAs and dashboards.
-
-[Work with me →](/services)
+When building RAG systems for production, focus on grounded answers with citations, predictable latency, and proper evaluation gates. Design systems with clear SLAs and monitoring dashboards to ensure reliability.
