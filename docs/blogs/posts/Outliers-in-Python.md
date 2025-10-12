@@ -9,15 +9,7 @@ date:
 categories:
     - Python
     - Data Science
-tags:
-    - Python
-    - Data Science
-    - Outliers Detection
 meta:
-    - name: robots
-      content: index, follow
-    - name: Publisher
-      content: Subhajit Bhar
     - name: keywords
       content: Outliers, Python, Data Science, Statistics, Machine Learning
 
