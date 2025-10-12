@@ -11,7 +11,6 @@ categories:
 meta:
     - name: keywords
       content: LangChain, RAG Architecture, LLM Implementation
-twitter_card: "summary_large_image"
 ---
 
 RAG is a design pattern, not a product. LangChain supports it out of the box. This guide shows a production-ready RAG setup in LangChain with architecture, retrieval choices, runnable code, evaluation metrics, and trade-offs from my client projects.
@@ -40,7 +39,7 @@ RAG fixed this. We chunked documents, embedded them, retrieved the most relevant
 
 ## Architecture at a glance
 
-![RAG architecture with chunking, embeddings, vector store, retriever, LLM with source-citation](/images/rag-workflow.min.svg)
+![RAG architecture with chunking, embeddings, vector store, retriever, LLM with source-citation](../../img/rag-workflow.min.svg)
 
 1. Ingest documents (PDF, HTML, markdown)
 2. Split into chunks (size/overlap depend on doc type)
@@ -203,7 +202,7 @@ Garbage in → garbage out. Before embedding:
 
 - Remove duplicated headers/footers and OCR artifacts.
 - Normalize whitespace and bullet structures; enforce sentence boundaries before chunking.
-- Validate statistical anomalies in numeric tables if you’ll query them (see: [/blogs/detect-remove-outliers-python-iqr-zscore](/blogs/detect-remove-outliers-python-iqr-zscore) and [/blogs/handle-missing-values-pandas-without-losing-information](/blogs/handle-missing-values-pandas-without-losing-information)).
+- Validate statistical anomalies in numeric tables if you'll query them (see: [/blogs/detect-remove-outliers-python-iqr-zscore](/blogs/detect-remove-outliers-python-iqr-zscore) and [/blogs/pandas-missing-values](/blogs/pandas-missing-values)).
 - Be careful with array reshaping in preprocessing (see: [/blogs/difference-reshape-flatten-numpy](/blogs/difference-reshape-flatten-numpy)).
 
 ## Pitfalls I hit (and fixes)

@@ -11,7 +11,6 @@ categories:
 meta:
     - name: keywords
       content: LightRAG, Retrieval Augmented Generation, RAG Implementation
-twitter_card: "summary_large_image"
 ---
 
 LightRAG is a minimal RAG toolkit that strips away heavy abstractions. Here’s a complete build with code, performance numbers versus a LangChain baseline, and when LightRAG is the right choice.
@@ -30,7 +29,7 @@ LightRAG gives me that — a thin layer over embeddings, a vector index, and pro
 
 ## Architecture
 
-![Lean RAG pipeline focused on minimal components: chunking, embeddings, vector store, retriever, prompt, LLM](/images/rag-workflow.min.svg)
+![Lean RAG pipeline focused on minimal components: chunking, embeddings, vector store, retriever, prompt, LLM](../../img/rag-workflow.min.svg)
 
 1. Ingest Markdown/PDF → normalize text
 2. Chunk with conservative overlap
@@ -174,7 +173,7 @@ When to stick with LangChain: you need tracing, callbacks, streaming tools, or p
 
 - Remove duplicated headers/footers and OCR noise.
 - Validate anomalies in numeric tables → [/blogs/detect-remove-outliers-python-iqr-zscore](/blogs/detect-remove-outliers-python-iqr-zscore)
-- Handle missing values appropriately → [/blogs/handle-missing-values-pandas-without-losing-information](/blogs/handle-missing-values-pandas-without-losing-information)
+- Handle missing values appropriately → [/blogs/pandas-missing-values](/blogs/pandas-missing-values)
 - Ensure shapes stay consistent in preprocessing → [/blogs/difference-reshape-flatten-numpy](/blogs/difference-reshape-flatten-numpy)
 
 ## Business value from recent work

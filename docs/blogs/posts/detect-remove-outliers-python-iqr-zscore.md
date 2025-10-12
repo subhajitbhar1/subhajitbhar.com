@@ -12,7 +12,6 @@ categories:
 meta:
     - name: keywords
       content: Outlier Detection, IQR Method, Z-Score
-twitter_card: "summary_large_image"
 ---
 
 Outliers can significantly skew statistical analysis and machine learning model performance. This guide covers statistical and machine learning methods to detect and handle outliers effectively in Python.

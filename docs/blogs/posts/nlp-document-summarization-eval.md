@@ -12,7 +12,6 @@ categories:
 meta:
     - name: keywords
       content: Document Summarization, NLP Evaluation, Text Summarization
-twitter_card: "summary_large_image"
 ---
 
 Document summarization is a critical NLP task that helps users quickly grasp key information from long documents. But how do you know if your model is actually working? This guide shows a workflow that starts with evaluation and acceptance criteria before touching models.
@@ -57,8 +56,6 @@ Related: RAG and data quality posts to improve chunking/grounding:
 [/blogs/does-langchain-use-rag](/blogs/does-langchain-use-rag), [/blogs/lightrag-fast-retrieval-augmented-generation](/blogs/lightrag-fast-retrieval-augmented-generation), and [/blogs/detect-remove-outliers-python-iqr-zscore](/blogs/detect-remove-outliers-python-iqr-zscore).
 
 ## Architecture
-
-![Summarization workflow: ingest → segment → extractive baseline → abstractive refine → scoring → human review](/images/nlp-summarization-architecture.png)
 
 1. Ingest and clean text (see text-cleaning pipeline)
 2. Segment by sections; avoid cross-topic chunks

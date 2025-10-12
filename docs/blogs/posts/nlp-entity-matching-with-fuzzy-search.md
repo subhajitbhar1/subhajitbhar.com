@@ -12,7 +12,6 @@ categories:
 meta:
     - name: keywords
       content: Entity Matching, Fuzzy Search, NLP
-twitter_card: "summary_large_image"
 ---
 
 Product catalogs rarely match 1:1. I combine lexical and semantic similarity with thresholds to minimize false matches.
@@ -71,8 +70,6 @@ if __name__ == "__main__":
 - Evaluate with precision@1 and manual spot-checks.
 
 ## Architecture & workflow
-
-![Entity matching: TF-IDF candidates → JW re-rank → Embedding tie-breaker → thresholds → human review](/images/nlp-entity-matching-architecture.png)
 
 1. Normalize product titles (case, unicode, punctuation)
 2. Generate candidates via TF-IDF cosine (top-10)

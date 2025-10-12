@@ -11,7 +11,6 @@ categories:
 meta:
     - name: keywords
       content: On-Page SEO, Off-Page SEO, Digital Marketing
-twitter_card: "summary_large_image"
 ---
 Search engine optimization (SEO) is built on two fundamental pillars: on-page and off-page optimization. While both are essential for ranking success, they work in distinctly different ways.
 

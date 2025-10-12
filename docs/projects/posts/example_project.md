@@ -9,7 +9,6 @@ date:
 meta:
     - name: keywords
       content: Project, Example
-twitter_card: "summary_large_image"
 ---
 
 

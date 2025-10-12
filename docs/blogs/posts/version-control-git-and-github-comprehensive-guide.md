@@ -11,7 +11,6 @@ categories:
 meta:
     - name: keywords
       content: Git Tutorial, GitHub Guide, Version Control Best Practices
-twitter_card: "summary_large_image"
 ---
 
 Version control is the foundation of reliable software delivery. This guide teaches Git from first principles, then layers in practical GitHub workflows used by high-performing teams. You’ll learn the mental models, the everyday commands, and the advanced tools to collaborate confidently without fear of breaking anything.

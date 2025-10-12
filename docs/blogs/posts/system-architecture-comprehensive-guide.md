@@ -11,7 +11,6 @@ categories:
 meta:
     - name: keywords
       content: System Architecture, Scalable Design, System Reliability
-twitter_card: "summary_large_image"
 ---
 
 Designing and evolving system architecture is about making informed trade‑offs. This guide provides a practical, opinionated walkthrough of the core concepts, patterns, and decisions you need to build scalable, reliable, and cost‑efficient systems—plus answers to the most common questions engineers and architects ask.

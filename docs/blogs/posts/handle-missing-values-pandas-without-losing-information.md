@@ -12,7 +12,6 @@ categories:
 meta:
     - name: keywords
       content: Pandas, Missing Values, Data Cleaning
-twitter_card: "summary_large_image"
 ---
 
 Missing values are inevitable in real-world datasets. This guide covers proven methods to handle missing data in pandas without compromising data integrity or analytical accuracy.

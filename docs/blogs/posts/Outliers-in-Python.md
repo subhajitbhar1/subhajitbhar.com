@@ -12,8 +12,6 @@ categories:
 meta:
     - name: keywords
       content: Outlier Detection, Python Statistics, Data Analysis
-
-twitter_card: "summary_large_image"
 ---
 Real-world datasets are messy. Outliers can hide patterns, distort models, and lead to bad decisions. In this article, we’ll walk through practical ways to detect them in Python - using plots, statistics, and machine learning, then apply it all on a real dataset.
 

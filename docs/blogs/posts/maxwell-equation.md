@@ -11,7 +11,6 @@ categories:
 meta:
     - name: keywords
       content: Maxwell Equations, Electromagnetism, Physics
-twitter_card: "summary_large_image"
 ---
 
 Maxwell's equations are a set of four fundamental equations that form the foundation of classical electromagnetism, classical optics, and electric circuits. These equations describe how electric and magnetic fields interact and propagate through space and time.

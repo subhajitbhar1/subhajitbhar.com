@@ -47,7 +47,8 @@ nav:
   - index.md
   - Blogs:
       - blogs/index.md
-  - Projects: /projects/
+  - Projects:
+      - projects/index.md
   - Testimonials: testimonials.md
 
 hooks:
@@ -72,7 +73,6 @@ plugins:
       categories: true
       post_url_format: "{slug}"
       draft_if_future_date: true
-      authors_profiles: true
       pagination_per_page: 10
       categories_allowed:
         - Python
@@ -96,7 +96,6 @@ plugins:
       categories: false
       post_url_format: "{slug}"
       draft_if_future_date: true
-      authors_profiles: true
       pagination_per_page: 10
 
 markdown_extensions:

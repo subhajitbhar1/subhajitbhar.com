@@ -11,7 +11,6 @@ categories:
 meta:
     - name: keywords
       content: Retrieval Augmented Generation, RAG, Knowledge-Intensive NLP
-twitter_card: "summary_large_image"
 ---
 Picture this: You're asking an AI about cancer treatments. It sounds super confident and gives you detailed answers. But here's the problem — it just made up a medical study that doesn't exist.
 
@@ -71,7 +70,7 @@ Here's what happens:
 3. **AI reads those documents** and answers based on what it found
 4. **You get a fact-based answer**
 
-![RAG Workflow](/img/rag-workflow.min.svg?v=2)
+![RAG Workflow](../../img/rag-workflow.min.svg)
 
 It's like having an AI that can Google things before answering — except way more sophisticated.
 

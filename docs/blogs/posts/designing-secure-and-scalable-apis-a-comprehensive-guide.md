@@ -12,7 +12,6 @@ categories:
 meta:
     - name: keywords
       content: Secure API Design, Scalable APIs, FastAPI Best Practices
-twitter_card: "summary_large_image"
 ---
 
 APIs are the connective tissue of modern products. This guide distills proven practices for API design, security, observability, and reliability—covering the most frequent questions and edge cases teams face in production. Examples use FastAPI and Pydantic v2, but the principles generalize to any stack.

@@ -11,7 +11,6 @@ categories:
 meta:
     - name: keywords
       content: Git Commands, Git Cheat Sheet, Git Workflows
-twitter_card: "summary_large_image"
 ---
 
 A quick, task-oriented Git reference. Pair this with the in-depth guide for concepts and best practices.
@@ -171,6 +170,6 @@ git push -u origin feat/x
 # open PR on GitHub
 ```
 
-See also: the full guide [“The Definitive Guide to Version Control with Git and GitHub”](/version-control-git-github/).
+See also: the full guide ["The Definitive Guide to Version Control with Git and GitHub"](/blogs/version-control-git-github/).
 
 
