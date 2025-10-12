@@ -8,19 +8,10 @@ date:
     created: 2025-09-24
 categories:
     - AI ML
-tags:
-    - RAG
-    - NLP
-    - Knowledge-Intensive
-    - Retrieval-Augmented Generation
-twitter_card: "summary_large_image"
 meta:
-    - name: robots
-      content: index, follow
     - name: keywords
       content: RAG, NLP, Knowledge-Intensive, Retrieval-Augmented Generation
-    - name: Publisher
-      content: Subhajit Bhar
+twitter_card: "summary_large_image"
 ---
 Picture this: You're asking an AI about cancer treatments. It sounds super confident and gives you detailed answers. But here's the problem — it just made up a medical study that doesn't exist.
 

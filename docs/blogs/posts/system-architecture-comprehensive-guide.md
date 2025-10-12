@@ -8,10 +8,9 @@ date:
     created: 2025-09-24
 categories:
     - System Design
-tags:
-    - Architecture
-    - Scalability
-    - Reliability
+meta:
+    - name: keywords
+      content: Architecture, Scalability, Reliability
 twitter_card: "summary_large_image"
 ---
 

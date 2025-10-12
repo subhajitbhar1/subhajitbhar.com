@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.10"
 
 [[package]]
@@ -23,29 +23,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/10/bf/fa31834dc27a7f05e5290eae47c82690edc3a7b37d58f7fb35a1bdbf355b/backrefs-5.9-py313-none-any.whl", hash = "sha256:cc37b19fa219e93ff825ed1fed8879e47b4d89aa7a1884860e2db64ccd7c676b", size = 399843, upload-time = "2025-06-22T19:34:09.68Z" },
     { url = "https://files.pythonhosted.org/packages/fc/24/b29af34b2c9c41645a9f4ff117bae860291780d73880f449e0b5d948c070/backrefs-5.9-py314-none-any.whl", hash = "sha256:df5e169836cc8acb5e440ebae9aad4bf9d15e226d3bad049cf3f6a5c20cc8dc9", size = 411762, upload-time = "2025-06-22T19:34:11.037Z" },
     { url = "https://files.pythonhosted.org/packages/41/ff/392bff89415399a979be4a65357a41d92729ae8580a66073d8ec8d810f98/backrefs-5.9-py39-none-any.whl", hash = "sha256:f48ee18f6252b8f5777a22a00a09a85de0ca931658f1dd96d4406a34f3748c60", size = 380265, upload-time = "2025-06-22T19:34:12.405Z" },
-]
-
-[[package]]
-name = "blogs-subhajitbhar-com"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "cairocffi" },
-    { name = "cairosvg" },
-    { name = "mkdocs-material", extra = ["imaging"] },
-    { name = "mkdocs-rss-plugin" },
-    { name = "pillow" },
-    { name = "urllib3" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "cairocffi", specifier = ">=1.7.1" },
-    { name = "cairosvg", specifier = ">=2.8.2" },
-    { name = "mkdocs-material", extras = ["imaging"], specifier = ">=9.6.20" },
-    { name = "mkdocs-rss-plugin", specifier = ">=1.17.3" },
-    { name = "pillow", specifier = ">=11.3.0" },
-    { name = "urllib3", specifier = ">=2.5.0" },
 ]
 
 [[package]]
@@ -842,6 +819,29 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/44/cd/a040c4b3119bbe532e5b0732286f805445375489fceaec1f48306068ee3b/smmap-5.0.2.tar.gz", hash = "sha256:26ea65a03958fa0c8a1c7e8c7a58fdc77221b8910f6be2131affade476898ad5", size = 22329, upload-time = "2025-01-02T07:14:40.909Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/04/be/d09147ad1ec7934636ad912901c5fd7667e1c858e19d355237db0d0cd5e4/smmap-5.0.2-py3-none-any.whl", hash = "sha256:b30115f0def7d7531d22a0fb6502488d879e75b260a9db4d0819cfb25403af5e", size = 24303, upload-time = "2025-01-02T07:14:38.724Z" },
+]
+
+[[package]]
+name = "subhajitbhar-com"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "cairocffi" },
+    { name = "cairosvg" },
+    { name = "mkdocs-material", extra = ["imaging"] },
+    { name = "mkdocs-rss-plugin" },
+    { name = "pillow" },
+    { name = "urllib3" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "cairocffi", specifier = ">=1.7.1" },
+    { name = "cairosvg", specifier = ">=2.8.2" },
+    { name = "mkdocs-material", extras = ["imaging"], specifier = ">=9.6.20" },
+    { name = "mkdocs-rss-plugin", specifier = ">=1.17.3" },
+    { name = "pillow", specifier = ">=11.3.0" },
+    { name = "urllib3", specifier = ">=2.5.0" },
 ]
 
 [[package]]

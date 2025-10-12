@@ -5,12 +5,8 @@ slug: projects
 date:
     created: 2025-09-28
 meta: 
- - name: robots
-   content: index, follow
  - name: keywords
    content: Subhajit Bhar, freelance data scientist, projects, data science, AI, ML, NLP, RAG, knowledge base
- - name: Publisher
-   content: Subhajit Bhar
 hide:
   - navigation
   - toc

@@ -8,11 +8,9 @@ date:
     created: 2025-09-24
 categories:
     - DevOps
-tags:
-    - Git
-    - GitHub
-    - Version Control
-    - DevOps
+meta:
+    - name: keywords
+      content: Git, GitHub, Version Control, DevOps
 twitter_card: "summary_large_image"
 ---
 

@@ -8,21 +8,10 @@ date:
     created: 2025-08-02
 categories:
     - AI ML
-tags:
-    - LangChain
-    - RAG
-    - LLMs
-    - Python
-    - Evaluation
-    - Embeddings
-twitter_card: "summary_large_image"
 meta:
-    - name: robots
-      content: index, follow
     - name: keywords
       content: LangChain, RAG, LLMs, Python, Evaluation, Embeddings
-    - name: Publisher
-      content: Subhajit Bhar
+twitter_card: "summary_large_image"
 ---
 
 RAG is a design pattern, not a product. LangChain supports it out of the box. This guide shows a production-ready RAG setup in LangChain with architecture, retrieval choices, runnable code, evaluation metrics, and trade-offs from my client projects.

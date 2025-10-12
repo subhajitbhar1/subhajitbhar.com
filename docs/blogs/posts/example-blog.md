@@ -15,16 +15,10 @@ categories:
     - Automation
     - Freelancing   
     - Physics  
-tags:
-    - Example
-twitter_card: "summary_large_image"
 meta:
-    - name: robots
-      content: index, follow
     - name: keywords
       content: Example, Blog, Description
-    - name: Publisher
-      content: Subhajit Bhar
+twitter_card: "summary_large_image"
 ---
 
 # Example Blog

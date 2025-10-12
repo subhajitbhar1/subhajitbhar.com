@@ -9,14 +9,9 @@ date:
 categories:
     - Python
     - Data Science
-tags:
-    - Python
-    - Data Science
-    - Outliers Detection
 meta:
-    - name: robots
-      content: index, follow
-
+    - name: keywords
+      content: Python, Data Science, Outliers Detection
 twitter_card: "summary_large_image"
 ---
 

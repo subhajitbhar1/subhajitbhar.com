@@ -8,19 +8,10 @@ date:
     created: 2025-07-12
 categories:
     - SEO  
-tags:
-    - SEO
-    - Digital Marketing
-    - Content Strategy
-    - Search Engine Optimization
-twitter_card: "summary_large_image"
 meta:
-    - name: robots
-      content: index, follow
     - name: keywords
       content: SEO, Digital Marketing, Content Strategy, Search Engine Optimization
-    - name: Publisher
-      content: Subhajit Bhar
+twitter_card: "summary_large_image"
 ---
 Search engine optimization (SEO) is built on two fundamental pillars: on-page and off-page optimization. While both are essential for ranking success, they work in distinctly different ways.
 

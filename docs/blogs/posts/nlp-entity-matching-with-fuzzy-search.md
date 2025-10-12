@@ -9,19 +9,10 @@ date:
 categories:
     - Python
     - NLP
-tags:
-    - NLP
-    - Entity Matching
-    - Python
-    - IR
-twitter_card: "summary_large_image"
 meta:
-    - name: robots
-      content: index, follow
     - name: keywords
       content: NLP, Entity Matching, Python, IR
-    - name: Publisher
-      content: Subhajit Bhar
+twitter_card: "summary_large_image"
 ---
 
 Product catalogs rarely match 1:1. I combine lexical and semantic similarity with thresholds to minimize false matches.

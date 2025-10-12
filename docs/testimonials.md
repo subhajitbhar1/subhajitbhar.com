@@ -5,12 +5,8 @@ slug: testimonials
 date:
     created: 2025-09-28
 meta: 
- - name: robots
-   content: index, follow
  - name: keywords
    content: Subhajit Bhar, freelance data scientist, Upwork, testimonials
- - name: Publisher
-   content: Subhajit Bhar
 hide:
   - navigation
   - toc

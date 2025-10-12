@@ -1,7 +1,7 @@
 [project]
-name = "blogs-subhajitbhar-com"
+name = "subhajitbhar-com"
 version = "0.1.0"
-description = "Add your description here"
+description = "Personal website of Subhajit Bhar"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

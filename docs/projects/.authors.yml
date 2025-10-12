@@ -1,7 +1,7 @@
 authors:
-    subhajit:
-        name: Subhajit Bhar
-        description: Freelance Data Scientist
-        avatar: img/profile.webp
-        url: https://www.subhajitbhar.com
-        email: hello@subhajitbhar.com
+  subhajit:
+    name: Subhajit Bhar
+    description: Freelance Data Scientist
+    avatar: img/profile.webp
+    url: https://subhajitbhar.com
+    email: hello@subhajitbhar.com

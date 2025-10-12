@@ -6,9 +6,9 @@ description: This is an example project description.
 slug: example-project
 date:
     created: 3025-09-24
-tags:
-    - Project
-    - Example
+meta:
+    - name: keywords
+      content: Project, Example
 twitter_card: "summary_large_image"
 ---
 

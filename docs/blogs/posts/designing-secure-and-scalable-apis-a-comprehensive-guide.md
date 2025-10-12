@@ -9,11 +9,9 @@ date:
 categories:
     - Python
     - System Design
-tags:
-    - API
-    - Security
-    - FastAPI
-    - Design
+meta:
+    - name: keywords
+      content: API, Security, FastAPI, Design
 twitter_card: "summary_large_image"
 ---
 

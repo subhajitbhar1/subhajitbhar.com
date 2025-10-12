@@ -9,19 +9,10 @@ date:
 categories:
     - Python
     - NLP
-tags:
-    - NLP
-    - Summarization
-    - Evaluation
-    - Python
-twitter_card: "summary_large_image"
 meta:
-    - name: robots
-      content: index, follow
     - name: keywords
       content: NLP, Summarization, Evaluation, Python
-    - name: Publisher
-      content: Subhajit Bhar
+twitter_card: "summary_large_image"
 ---
 
 Document summarization is a critical NLP task that helps users quickly grasp key information from long documents. But how do you know if your model is actually working? This guide shows a workflow that starts with evaluation and acceptance criteria before touching models.

@@ -8,19 +8,10 @@ date:
     created: 2025-07-30
 categories:
     - AI ML
-tags:
-    - RAG
-    - Open Source
-    - Evaluation
-    - Embeddings
-twitter_card: "summary_large_image"
 meta:
-    - name: robots
-      content: index, follow
     - name: keywords
       content: RAG, LightRAG, NLP, Open Source, Evaluation, Embeddings
-    - name: Publisher
-      content: Subhajit Bhar
+twitter_card: "summary_large_image"
 ---
 
 LightRAG is a minimal RAG toolkit that strips away heavy abstractions. Here’s a complete build with code, performance numbers versus a LangChain baseline, and when LightRAG is the right choice.

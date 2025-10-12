@@ -2,18 +2,15 @@
 authors: 
     - subhajit
 title: Understanding Maxwell's Equations - The Foundation of Electromagnetism
-description: Understand Maxwell’s four fundamental equations with plain‑English explanations and real‑world applications.
+description: Understand Maxwell's four fundamental equations with plain‑English explanations and real‑world applications.
 slug: maxwell-equations-explained
 date: 
     created: 2125-09-17
 categories:
     - Physics
-tags:
-    - Physics
-    - Electromagnetism
-    - Mathematics
-    - Science
-    - Test
+meta:
+    - name: keywords
+      content: Physics, Electromagnetism, Mathematics, Science, Test
 twitter_card: "summary_large_image"
 ---
 

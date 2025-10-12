@@ -8,10 +8,9 @@ date:
     created: 2025-09-24
 categories:
     - DevOps
-tags:
-    - Git
-    - Cheat Sheet
-    - Version Control
+meta:
+    - name: keywords
+      content: Git, Cheat Sheet, Version Control
 twitter_card: "summary_large_image"
 ---
 
