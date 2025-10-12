@@ -1,147 +1,172 @@
-site_name: Subhajit Bhar
+site_name: Subhajit's personal website
+site_description: Personal website of Subhajit Bhar, a freelance data scientist and machine learning engineer.
 site_url: https://subhajitbhar.com
+repo_name: subhajitbhar1/subhajitbhar.com
 repo_url: https://github.com/subhajitbhar1/subhajitbhar.com
+
 theme:
-    name: material
-    custom_dir: overrides
-    # logo: img/profile.webp
-    favicon: img/favicon.ico
-    font:
-        text: Roboto
-        code: Fira Code
-    palette:
-        primary: black
-        accent: red
-            
-    features:
-        # ---search features---
-        - search.suggest
-        - search.highlight
-        # ---content features---
-        - content.code.copy
-        - content.code.select
-        - content.code.annotate
-        # ---navigation features---
-        - navigation.instant
-        - navigation.instant.prefetch
-        - navigation.instant.progress
-        - navigation.tabs
-        - navigation.tabs.sticky
-        - navigation.path
-        - navigation.footer
+  logo: img/profile.webp
+  favicon: img/pikachu.png
+  name: material
+  custom_dir: overrides
+  palette:
+    scheme: default
+    primary: black
+    accent: blue
+  font:
+    text: Roboto
+    code: Fira Code
+
+  features:
+    # ---content features---
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select  # insider feature
+    # - content.footnote.tooltips # insider feature
+    # - content.tabs.link
+    - content.tooltips
+    # ---search features---
+    - search.suggest
+    - search.highlight
+    - search.share
+    # --- toc features---
+    - toc.follow
+    # ---navigation features---
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    # - navigation.instant.prefetch # insider feature
+    # - navigation.instant.progress
+    # - navigation.path # insider feature
+    - navigation.top
+    - navigation.tracking
 
 nav:
-    - index.md
-    - Blogs: 
+  - index.md
+  - Blogs:
       - blogs/index.md
-    - Projects: /projects/
-    - Tags: tags.md
-    - Testimonials: testimonials.md
+  - Projects: /projects/
+  - Testimonials: testimonials.md
 
 hooks:
-    - hooks/socialmedia.py
+  - hooks/socialmedia.py
 
 plugins:
-    # search plugins
-    - search
-    - social:
-          cache_dir: .cache/social
-          cards_dir: assets/images/social
-          cards: true
-          cards_layout_options:
-              background_color: "#0f1419"
-              color: "#ffffff"
-              font_family: Roboto
-    - meta
-    - blog:
-          blog_dir: blogs
-          blog_toc: true
-          archive: false
-          categories: true
-          post_url_format: "{slug}"
-          draft_if_future_date: true
-          authors_profiles: true
-          pagination_per_page: 10
-          categories_allowed:
-            - Python
-            - Data Science
-            - AI ML
-            - DevOps
-            - System Design
-            - Automation
-            - Freelancing   
-            - Physics      
-            - SEO
-            - NLP
-
-    - tags:
-          tags_file: tags.md
-    - blog:
-          blog_dir: projects
-          blog_toc: true
-          archive: false
-          categories: false
-          post_url_format: "{slug}"
-          draft_if_future_date: true
-          authors_profiles: true
-          pagination_per_page: 10
+  # search plugins
+  - search
+  - social:
+      cache_dir: .cache/social
+      cards_dir: assets/images/social
+      cards: true
+      cards_layout_options:
+        background_color: "#0f1419"
+        color: "#ffffff"
+        font_family: Roboto
+  - meta
+  - blog:
+      blog_dir: blogs
+      blog_toc: true
+      archive: false
+      categories: true
+      post_url_format: "{slug}"
+      draft_if_future_date: true
+      authors_profiles: true
+      pagination_per_page: 10
+      categories_allowed:
+        - Python
+        - Data Science
+        - Artificial Intelligence
+        - Machine Learning
+        - AI ML
+        - DevOps
+        - System Design
+        - Automation
+        - Freelancing
+        - Physics
+        - SEO
+        - Natural Language Processing
+        - NLP
+        - Computer Vision
+  - blog:
+      blog_dir: projects
+      blog_toc: true
+      archive: false
+      categories: false
+      post_url_format: "{slug}"
+      draft_if_future_date: true
+      authors_profiles: true
+      pagination_per_page: 10
 
 markdown_extensions:
-    - pymdownx.highlight:
-          anchor_linenums: true
+  # --- Python Markdown Extensions ---
+  - abbr
+  - admonition
+  - attr_list
+  - footnotes # add inline footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  # --- Python Markdown Extensions ---
+  - pymdownx.betterem
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.blocks.caption
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+          async: true
           line_spans: __span
           pygments_lang_class: true
-    - pymdownx.inlinehilite
-    - pymdownx.snippets
-    - pymdownx.superfences:
-          custom_fences:
-              - name: mermaid
-                class: mermaid
-                format: !!python/name:pymdownx.superfences.fence_code_format
-                async: true
-                line_spans: __span
-                pygments_lang_class: true
-    - pymdownx.tabbed:
-          alternate_style: true
-    - attr_list
-    - md_in_html
-    - pymdownx.blocks.caption
-    - admonition
-    - pymdownx.details
-    - pymdownx.emoji:
-          emoji_index: !!python/name:material.extensions.emoji.twemoji
-          emoji_generator: !!python/name:material.extensions.emoji.to_svg
-    - pymdownx.arithmatex:
-          generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tilde
 
 extra_javascript:
-    - javascripts/katex.js
-    - https://unpkg.com/katex@0/dist/katex.min.js
-    - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 extra_css:
-    # - stylesheets/style.css
-    - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
-    - https://unpkg.com/katex@0/dist/katex.min.css
-    - 
+  # - stylesheets/style.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  -
 # extra:
 #     analytics:
 #         provider: google
 #         property: G-xxxxxx
 extra:
-    social:
-        - icon: fontawesome/brands/x-twitter
-          link: https://x.com/SubhajitBhar1
-        - icon: fontawesome/brands/linkedin
-          link: https://www.linkedin.com/in/SubhajitBhar1
-        - icon: fontawesome/brands/github
-          link: https://github.com/SubhajitBhar1
-        - icon: fontawesome/brands/medium
-          link: https://medium.com/@SubhajitBhar1
-        - icon: fontawesome/brands/upwork
-          link: https://www.upwork.com/freelancers/subhajitbhar1
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/SubhajitBhar1
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/SubhajitBhar1
+    - icon: fontawesome/brands/github
+      link: https://github.com/SubhajitBhar1
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@SubhajitBhar1
+    - icon: fontawesome/brands/upwork
+      link: https://www.upwork.com/freelancers/subhajitbhar1
 
 watch:
-    - . # watch all files and directories in the root directory
+  - . # watch all files and directories in the root directory
 
 copyright: Copyright &copy; 2025 Subhajit Bhar

@@ -1,0 +1,5 @@
+meta:
+  - name: robots
+    content: index, follow
+  - name: Publisher
+    content: Subhajit Bhar

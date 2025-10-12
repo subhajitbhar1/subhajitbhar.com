@@ -11,6 +11,9 @@ meta:
    content: Subhajit Bhar, freelance data scientist, projects, data science, AI, ML, NLP, RAG, knowledge base
  - name: Publisher
    content: Subhajit Bhar
+hide:
+  - navigation
+  - toc
 ---
 
 

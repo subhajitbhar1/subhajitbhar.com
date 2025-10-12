@@ -11,6 +11,9 @@ meta:
    content: Subhajit Bhar, freelance data scientist, Upwork, testimonials
  - name: Publisher
    content: Subhajit Bhar
+hide:
+  - navigation
+  - toc
 ---
 
 !!! info "Verification"
