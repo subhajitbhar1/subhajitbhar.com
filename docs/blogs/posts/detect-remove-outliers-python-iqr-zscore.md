@@ -12,6 +12,7 @@ categories:
 tags:
     - Python
     - Data Science
+    - Outliers Detection
 meta:
     - name: robots
       content: index, follow
