@@ -2,7 +2,7 @@
 authors:
     - subhajit
 title: "LightRAG: Lean RAG with Benchmarks"
-description: LightRAG  a lean RAG toolkit with code, benchmarks vs. LangChain, and optimal use cases.
+description: LightRAG implementation guide with code, benchmarks vs. LangChain, and use cases.
 slug: lightrag-fast-retrieval-augmented-generation
 date:
     created: 2025-07-30

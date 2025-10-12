@@ -2,7 +2,7 @@
 authors:
     - subhajit
 title: "NLP Entity Matching with Fuzzy Search"
-description: Product catalogs rarely match 1:1. I combine lexical and semantic similarity with thresholds to minimize false matches.
+description: Match product catalogs with fuzzy search using lexical and semantic similarity methods.
 slug: nlp-entity-matching-with-fuzzy-search
 date:
     created: 2025-08-14

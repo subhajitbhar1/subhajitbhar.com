@@ -2,7 +2,7 @@
 authors:
     - subhajit
 title: "Outliers Detection in Python"
-description: This blog covers all the question and answers related to outliers detection in Python.
+description: Complete guide to outlier detection in Python with statistical methods and visualizations.
 slug: outliers-in-python
 date:
     created: 3025-09-30

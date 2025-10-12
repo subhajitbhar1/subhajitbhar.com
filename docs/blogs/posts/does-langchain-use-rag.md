@@ -2,7 +2,7 @@
 authors:
     - subhajit
 title: "LangChain: RAG Architecture & Code"
-description: Explore how LangChain implements RAG, a design pattern, with architecture, retrieval options, code, metrics, and client project insights.
+description: LangChain RAG implementation with architecture, retrieval options, code, and metrics.
 slug: does-langchain-use-rag
 date:
     created: 2025-08-02

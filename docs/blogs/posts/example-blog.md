@@ -1,8 +1,8 @@
 ---
 authors:
     - subhajit
-title: Example Blog
-description: This is an example blog description.
+title: Example Blog Post
+description: Example blog template with proper structure, frontmatter, and formatting guidelines.
 slug: example-blog
 date:
     created: 3025-09-24

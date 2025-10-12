@@ -2,7 +2,7 @@
 authors:
     - subhajit
 title: Designing Secure and Scalable APIs — A Comprehensive Guide
-description: Practical guide to API design, security, observability, and reliability with FastAPI examples and checklists.
+description: Build secure and scalable APIs with FastAPI best practices, security tips, and checklists.
 slug: secure-scalable-apis-guide
 date:
     created: 2025-09-24

@@ -2,7 +2,7 @@
 authors:
     - subhajit
 title: RAG for Knowledge-Intensive Tasks
-description: RAG is a powerful technique for knowledge-intensive NLP tasks, allowing AI models to access real-time information and context.
+description: Learn RAG fundamentals for knowledge-intensive NLP with practical examples and use cases.
 slug: rag-for-knowledge-intensive-nlp-tasks
 date:
     created: 2025-09-24

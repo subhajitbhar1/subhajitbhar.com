@@ -1,8 +1,8 @@
 ---
 authors:
     - subhajit
-title: beginners guide to building and securing APIs
-description: Learn API basics step-by-step with simple HTTP concepts, a minimal FastAPI app, beginner security, diagrams, and a handy glossary.
+title: Beginners Guide to Building and Securing APIs
+description: Step-by-step guide to API basics with FastAPI examples, security tips, and practical code.
 slug: api-101-beginner-guide
 date:
     created: 2025-09-24

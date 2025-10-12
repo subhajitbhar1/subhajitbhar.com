@@ -2,7 +2,7 @@
 authors:
     - subhajit
 title: "Document Summarization: Eval First"
-description: Develop a summarization workflow using dataset splits, ROUGE/BERTScore, and human evaluation checklists for extractive and abstractive methods.
+description: Build document summarization with ROUGE/BERTScore evaluation and human review checklists.
 slug: nlp-document-summarization-eval
 date:
     created: 2025-08-14

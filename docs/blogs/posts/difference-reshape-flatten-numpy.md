@@ -2,7 +2,7 @@
 authors:
     - subhajit
 title: Difference between reshape() and flatten() in NumPy
-description: Learn when to use reshape() vs flatten() in NumPy for array manipulation, with practical examples and performance comparisons.
+description: Master NumPy reshape() and flatten() methods with examples and performance comparisons.
 slug: difference-reshape-flatten-numpy
 date:
     created: 2025-07-25

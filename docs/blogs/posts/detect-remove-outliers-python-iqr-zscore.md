@@ -2,7 +2,7 @@
 authors:
     - subhajit
 title: "Outliers in Python: IQR and Z-Score"
-description: This is an example blog description.
+description: Detect and remove outliers using IQR and Z-Score methods with practical Python examples.
 slug: detect-remove-outliers-python-iqr-zscore
 date:
     created: 2025-09-30
