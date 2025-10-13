@@ -11,4 +11,5 @@ meta:
 
 # Blogs
 
-
+!!! info "Knowledge Base"
+    A growing collection of Python, ML, and data science notes to help you prepare for technical interviews can be found [here](https://kb.subhajitbhar.com/)
