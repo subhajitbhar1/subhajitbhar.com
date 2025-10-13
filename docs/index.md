@@ -19,7 +19,7 @@ meta:
 
 I’m a freelance Data Scientist from India 🇮🇳, currently based in the United Kingdom 🇬🇧.
 
-I build data automation workflows, interactive dashboards, and machine learning systems for teams in finance, e-commerce, and research across the United Kingdom, Europe, and the United States.
+I build data automation workflows, interactive dashboards, and machine learning systems for teams in finance, e-commerce, and research across the India, United Kingdom, Europe, and the United States.
 
 Best way to track my work is to follow me on [Twitter](https://x.com/SubhajitBhar1) and [LinkedIn](https://www.linkedin.com/in/subhajitbhar1/).
 
@@ -29,15 +29,3 @@ Connect with me:
 :fontawesome-brands-medium: [Medium](https://medium.com/@subhajitbhar1) &nbsp;&nbsp;&nbsp;&nbsp;
 :fontawesome-brands-github: [GitHub](https://github.com/subhajitbhar1) &nbsp;&nbsp;&nbsp;&nbsp;
 :fontawesome-brands-upwork: [Upwork](https://www.upwork.com/freelancers/subhajitbhar1)
-
-<!-- 
-I'm a freelance machine learning engineer based in the United Kingdom with 3+ years of experience building data automation workflows, interactive dashboards, and machine learning systems across finance, e-commerce, and data-driven research.
-
-
-I help businesses turn unstructured data - PDFs, scanned documents, and messy reports - into searchable knowledge bases using OCR, NLP, and LLMs. From RAG-powered chatbots to interactive dashboards, I build end-to-end AI systems that simplify search, insight, and automation.
-
-
-I've had quite the journey - from diving deep into quantum research to building indie projects and taking on freelance work in finance and e-commerce. When it comes to machine learning, I don't just build prototypes that look good on paper. I'm all about creating real, production-ready systems that actually work in the wild. My go-to tools? Python, Streamlit, LangChain, and AWS - they help me deliver solutions that are both fast and rock-solid. -->
-
-
-<br> 
