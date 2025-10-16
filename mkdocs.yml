@@ -5,7 +5,7 @@ repo_name: subhajitbhar1/subhajitbhar.com
 repo_url: https://github.com/subhajitbhar1/subhajitbhar.com
 
 theme:
-  logo: img/profile.webp
+  logo: img/logo-transparent.webp
   favicon: img/pikachu.png
   name: material
   custom_dir: overrides
@@ -62,7 +62,7 @@ plugins:
       cards_dir: assets/images/social
       cards: true
       cards_layout_options:
-        background_color: "#0f1419"
+        background_color: "#000000"
         color: "#ffffff"
         font_family: Roboto
   - meta
