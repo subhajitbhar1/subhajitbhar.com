@@ -164,6 +164,9 @@ extra:
       link: https://medium.com/@SubhajitBhar1
     - icon: fontawesome/brands/upwork
       link: https://www.upwork.com/freelancers/subhajitbhar1
+  meta:
+    - name: google-adsense-account
+      content: ca-pub-7166025628085613
 
 watch:
   - . # watch all files and directories in the root directory
