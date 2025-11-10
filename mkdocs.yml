@@ -148,11 +148,10 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
   - https://unpkg.com/katex@0/dist/katex.min.css
   -
-# extra:
-#     analytics:
-#         provider: google
-#         property: G-xxxxxx
 extra:
+  analytics:
+    provider: google
+    property: GTM-54TCJMJ3
   social:
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/SubhajitBhar1
