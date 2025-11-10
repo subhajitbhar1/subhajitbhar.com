@@ -149,9 +149,10 @@ extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
   -
 extra:
-  analytics:
-    provider: google
-    property: GTM-54TCJMJ3
+  # Google Tag Manager is now installed via template overrides
+  # analytics:
+  #   provider: google
+  #   property: GTM-54TCJMJ3
   social:
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/SubhajitBhar1
