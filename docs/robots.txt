@@ -8,6 +8,7 @@ Allow: /testimonials/
 # Block specific areas (examples)
 Disallow: /admin/
 Disallow: /.git/
+Disallow: /cdn-cgi/
 
 # Sitemap
 Sitemap: https://subhajitbhar.com/sitemap.xml
