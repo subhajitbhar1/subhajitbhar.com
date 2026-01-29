@@ -1,12 +1,12 @@
-site_name: Subhajit's personal website
-site_description: Personal website of Subhajit Bhar, a freelance data scientist and machine learning engineer.
+site_name: Subhajit Bhar
+site_description: Personal website of Subhajit Bhar, a freelance LLM Engineer.
 site_url: https://subhajitbhar.com
 repo_name: subhajitbhar1/subhajitbhar.com
-repo_url: https://github.com/subhajitbhar1/subhajitbhar.com
+# repo_url: https://github.com/subhajitbhar1/subhajitbhar.com
 
 theme:
-  logo: img/logo-transparent.webp
-  favicon: img/pikachu.png
+  logo: img/profile_downsize.png
+  favicon: img/profile_downsize.png
   name: material
   custom_dir: overrides
   palette:
@@ -34,7 +34,7 @@ theme:
     # ---navigation features---
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.footer
+    # - navigation.footer
     - navigation.indexes
     - navigation.instant
     # - navigation.instant.prefetch # insider feature
@@ -164,7 +164,6 @@ extra:
       link: https://medium.com/@SubhajitBhar1
     - icon: fontawesome/brands/upwork
       link: https://www.upwork.com/freelancers/subhajitbhar1
-
 
 watch:
   - . # watch all files and directories in the root directory
