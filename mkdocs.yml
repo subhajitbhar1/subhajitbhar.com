@@ -5,8 +5,8 @@ repo_name: subhajitbhar1/subhajitbhar.com
 # repo_url: https://github.com/subhajitbhar1/subhajitbhar.com
 
 theme:
-  logo: img/profile_downsize.png
-  favicon: img/profile_downsize.png
+  logo: img/profile_downsize.webp
+  favicon: img/favicon.ico
   name: material
   custom_dir: overrides
   palette:
