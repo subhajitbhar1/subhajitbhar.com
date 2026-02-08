@@ -1,5 +1,5 @@
 site_name: Subhajit Bhar
-site_description: Personal website of Subhajit Bhar, a freelance LLM Engineer.
+site_description: Subhajit Bhar is a freelance LLM Engineer building production-ready Document AI systems for document extraction, PDF parsing, and automated data extraction.
 site_url: https://subhajitbhar.com
 repo_name: subhajitbhar1/subhajitbhar.com
 # repo_url: https://github.com/subhajitbhar1/subhajitbhar.com
@@ -89,7 +89,7 @@ plugins:
         - SEO
         - Natural Language Processing
         - NLP
-        - Computer Vision
+        - Document AI
   - blog:
       blog_dir: projects
       blog_toc: true
@@ -169,4 +169,4 @@ extra:
 watch:
   - . # watch all files and directories in the root directory
 
-copyright: Copyright &copy; 2025 Subhajit Bhar
+copyright: Copyright &copy; 2025-2026 Subhajit Bhar

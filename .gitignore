@@ -19,6 +19,9 @@ site/
 skills/
 gsc/
 reports/
+.cursorrules/
+.cursor/
+action-plan/
 meta.html
 overrides/partials/head.html
 
