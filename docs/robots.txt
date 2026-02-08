@@ -13,5 +13,8 @@ Disallow: /cdn-cgi/
 # Sitemap
 Sitemap: https://subhajitbhar.com/sitemap.xml
 
+# LLMs
+Llms-txt: https://subhajitbhar.com/llms.txt
+
 # Crawl-delay
 Crawl-delay: 1

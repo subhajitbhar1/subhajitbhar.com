@@ -53,6 +53,7 @@ nav:
 
 hooks:
   - hooks/socialmedia.py
+  - hooks/sitemap_extras.py
 
 plugins:
   # search plugins

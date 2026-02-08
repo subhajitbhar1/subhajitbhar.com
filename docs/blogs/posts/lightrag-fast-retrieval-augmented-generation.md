@@ -185,3 +185,10 @@ When to stick with LangChain: you need tracing, callbacks, streaming tools, or p
 ## Shipping Lean RAG Systems
 
 For production RAG systems, focus on predictable latency and a minimal stack. Design lean RAG services with clear SLAs, proper dashboards, and evaluation gates to ensure reliability and performance.
+
+## Related Articles
+
+- [LightRAG as a LangChain Retriever](/blogs/lightrag-langchain-retriever-integration) — Integrate LightRAG with LangChain chains
+- [BM25 Hybrid Search with LightRAG](/blogs/lightrag-bm25-hybrid-search) — Combine vector and lexical search
+- [FAISS Index Types for Production RAG](/blogs/faiss-index-types-production-rag) — Scale beyond IndexFlatIP
+- [Reranking for Better RAG Retrieval](/blogs/reranking-rag-cross-encoder) — Add cross-encoder reranking
