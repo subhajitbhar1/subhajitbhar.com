@@ -17,6 +17,9 @@ libcairo.2.dylib
 # MkDocs build output
 site/
 skills/
+gsc/
+reports/
 meta.html
 overrides/partials/head.html
+
 
