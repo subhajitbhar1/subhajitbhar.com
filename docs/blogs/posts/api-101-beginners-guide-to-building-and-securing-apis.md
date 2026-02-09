@@ -8,6 +8,9 @@ date:
     created: 2025-09-24
 categories:
     - Python
+tags:
+    - API
+    - FastAPI
 meta:
     - name: keywords
       content: API Design Basics, FastAPI Tutorial, API Security

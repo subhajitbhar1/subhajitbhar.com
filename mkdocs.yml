@@ -47,6 +47,7 @@ nav:
   - index.md
   - Blogs:
       - blogs/index.md
+      - blogs/tags.md # Tags: blogs/tags.md
   - Projects:
       - projects/index.md
   - Testimonials: testimonials.md
@@ -58,6 +59,20 @@ hooks:
 plugins:
   # search plugins
   - search
+  - tags:
+      enabled: true
+      tags_allowed:
+        - Python
+        - Data Science
+        - Artificial Intelligence
+        - Machine Learning
+        - AI ML
+        - DevOps
+        - System Design
+        - Automation
+        - Freelancing
+        - API
+        - FastAPI
   - social:
       cache_dir: .cache/social
       cards_dir: assets/images/social
@@ -70,8 +85,9 @@ plugins:
   - blog:
       blog_dir: blogs
       blog_toc: true
-      archive: false
+      archive: true
       categories: true
+      tags: true
       post_url_format: "{slug}"
       draft_if_future_date: true
       pagination_per_page: 10
@@ -90,6 +106,7 @@ plugins:
         - Natural Language Processing
         - NLP
         - Document AI
+        -
   - blog:
       blog_dir: projects
       blog_toc: true
@@ -150,19 +167,20 @@ extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
   -
 extra:
+  generator: false
   # Google Tag Manager is now installed via template overrides
   # analytics:
   #   provider: google
   #   property: GTM-54TCJMJ3
   social:
-    - icon: fontawesome/brands/x-twitter
-      link: https://x.com/SubhajitBhar1
+    # - icon: fontawesome/brands/x-twitter
+    #   link: https://x.com/SubhajitBhar1
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/SubhajitBhar1
     - icon: fontawesome/brands/github
       link: https://github.com/SubhajitBhar1
-    - icon: fontawesome/brands/medium
-      link: https://medium.com/@SubhajitBhar1
+    # - icon: fontawesome/brands/medium
+    #   link: https://medium.com/@SubhajitBhar1
     - icon: fontawesome/brands/upwork
       link: https://www.upwork.com/freelancers/subhajitbhar1
 
