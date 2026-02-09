@@ -1,11 +1,12 @@
 ---
 authors: 
     - subhajit
-title: The Definitive Guide to Version Control with Git and GitHub
-description: Complete Git and GitHub guide with workflows, commands, branching, CI/CD, and troubleshooting.
+title: "Git & GitHub: The Definitive Version Control Guide"
+description: "Git and GitHub guide: version control, branching, workflows, CI/CD integration, and troubleshooting from beginner to advanced."
 slug: version-control-git-github
 date: 
     created: 2025-09-24
+    updated: 2026-02-09
 categories:
     - DevOps
 meta:

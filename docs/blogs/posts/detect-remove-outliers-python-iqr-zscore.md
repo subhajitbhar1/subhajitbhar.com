@@ -1,17 +1,18 @@
 ---
 authors:
     - subhajit
-title: "Outliers in Python: IQR and Z-Score"
-description: Detect and remove outliers using IQR and Z-Score methods with practical Python examples.
+title: "Detect and Remove Outliers in Python: IQR and Z-Score"
+description: "Detect and remove outliers in Python using IQR and Z-Score. Step-by-step code examples and guidance on when to use each method."
 slug: detect-remove-outliers-python-iqr-zscore
 date:
     created: 2025-09-30
+    updated: 2026-02-09
 categories:
     - Python
     - Data Science
 meta:
     - name: keywords
-      content: Outlier Detection, IQR Method, Z-Score
+      content: Outlier Detection, IQR Method, Z-Score, python detect outliers, python remove outliers
 ---
 
 Outliers can significantly skew statistical analysis and machine learning model performance. This guide covers statistical and machine learning methods to detect and handle outliers effectively in Python.

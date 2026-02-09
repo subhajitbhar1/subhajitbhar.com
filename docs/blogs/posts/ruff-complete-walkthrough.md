@@ -1,11 +1,12 @@
 ---
 authors:
     - subhajit
-title: Ruff — a modern Python linter and formatter (practical walkthrough)
-description: Step-by-step Ruff setup and usage with uv, configuration, pre-commit, and CI.
+title: "Ruff: Modern Python Linter & Formatter Walkthrough"
+description: "Complete Ruff setup guide: Python linter and formatter with uv integration, pre-commit hooks, and CI integration from install to production."
 slug: ruff-modern-linter
 date:
     created: 2025-09-24
+    updated: 2026-02-09
 categories:
     - Python
 meta:

@@ -1,16 +1,18 @@
 ---
 authors:
     - subhajit
-title: "LangChain: RAG Architecture & Code"
-description: LangChain RAG implementation with architecture, retrieval options, code, and metrics.
+title: "RAG with LangChain: Architecture, Code, and Metrics"
+description: "LangChain RAG implementation: architecture, code walkthrough, retrieval options compared, and performance benchmarks."
 slug: does-langchain-use-rag
 date:
     created: 2025-08-02
+    updated: 2026-02-09
 categories:
     - AI ML
 meta:
     - name: keywords
-      content: LangChain, RAG Architecture, LLM Implementation
+      content: langchain rag tutorial, langchain rag architecture diagram example, langchain rag example, rag agent langchain, agentic rag langchain
+
 ---
 
 RAG is a design pattern, not a product. LangChain supports it out of the box. This guide shows a production-ready RAG setup in LangChain with architecture, retrieval choices, runnable code, evaluation metrics, and trade-offs from my client projects.
