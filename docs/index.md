@@ -1,4 +1,5 @@
 ---
+title: Subhajit Bhar
 hide:
   - navigation
   - toc
