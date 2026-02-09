@@ -8,7 +8,12 @@ date:
     created: 2025-08-02
     updated: 2026-02-09
 categories:
-    - AI ML
+    - LLM Engineering
+tags:
+    - RAG
+    - LangChain
+    - Retrival
+    - Embeddings
 meta:
     - name: keywords
       content: langchain rag tutorial, langchain rag architecture diagram example, langchain rag example, rag agent langchain, agentic rag langchain

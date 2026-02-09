@@ -7,7 +7,7 @@ slug: On-Page-SEO-vs-Off-Page-SEO
 date:
     created: 2025-07-12
 categories:
-    - SEO  
+    - Software Engineering
 meta:
     - name: keywords
       content: On-Page SEO, Off-Page SEO, Digital Marketing

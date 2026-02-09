@@ -7,7 +7,11 @@ slug: modern-ci-pipeline
 date:
     created: 2025-09-24
 categories:
-    - Python
+    - Software Engineering
+tags:
+    - Ruff
+    - CI/CD
+    - DevOps
 meta:
     - name: keywords
       content: uv, Ruff, ty, GitHub Actions, CI pipeline, Python tooling, code quality

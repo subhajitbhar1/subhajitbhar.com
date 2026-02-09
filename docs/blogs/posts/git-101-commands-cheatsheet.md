@@ -7,6 +7,9 @@ slug: git-101-cheat-sheet
 date: 
     created: 2025-09-24
 categories:
+    - Software Engineering
+tags:
+    - Git
     - DevOps
 meta:
     - name: keywords

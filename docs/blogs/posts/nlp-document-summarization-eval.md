@@ -7,8 +7,10 @@ slug: nlp-document-summarization-eval
 date:
     created: 2025-08-14
 categories:
-    - Python
+    - LLM Engineering
+tags:
     - NLP
+    - Document AI
 meta:
     - name: keywords
       content: Document Summarization, NLP Evaluation, Text Summarization

@@ -8,7 +8,10 @@ draft: true
 date:
     created: 2025-01-29
 categories:
-    - AI ML
+    - LLM Engineering
+tags:
+    - RAG
+    - Retrival
 meta:
     - name: keywords
       content: Reranking, RAG, Cross-Encoder, LightRAG, Retrieval, Sentence Transformers

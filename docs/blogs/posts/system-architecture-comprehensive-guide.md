@@ -7,6 +7,8 @@ slug: system-architecture-comprehensive-guide
 date:
     created: 2025-09-24
 categories:
+    - Software Engineering
+tags:
     - System Design
 meta:
     - name: keywords

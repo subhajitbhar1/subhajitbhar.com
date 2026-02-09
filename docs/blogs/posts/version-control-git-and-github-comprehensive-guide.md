@@ -8,6 +8,10 @@ date:
     created: 2025-09-24
     updated: 2026-02-09
 categories:
+    - Software Engineering
+tags:
+    - Git
+    - GitHub
     - DevOps
 meta:
     - name: keywords

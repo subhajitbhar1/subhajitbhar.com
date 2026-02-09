@@ -7,7 +7,7 @@ slug: api-101-beginner-guide
 date:
     created: 2025-09-24
 categories:
-    - Python
+    - Software Engineering
 tags:
     - API
     - FastAPI

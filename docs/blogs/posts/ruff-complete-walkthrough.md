@@ -8,7 +8,11 @@ date:
     created: 2025-09-24
     updated: 2026-02-09
 categories:
-    - Python
+    - Software Engineering
+tags:
+    - Ruff
+    - CI/CD
+    - Automation
 meta:
     - name: keywords
       content: ruff, uv, pre-commit, GitHub Actions, linter, formatter, code quality

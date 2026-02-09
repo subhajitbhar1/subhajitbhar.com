@@ -7,7 +7,9 @@ slug: difference-reshape-flatten-numpy
 date:
     created: 2025-07-25
 categories:
-    - Python
+    - Data Science
+tags:
+    - Numpy
 meta:
     - name: keywords
       content: NumPy reshape, NumPy flatten, Array Manipulation

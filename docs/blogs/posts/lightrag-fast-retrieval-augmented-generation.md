@@ -7,7 +7,12 @@ slug: lightrag-fast-retrieval-augmented-generation
 date:
     created: 2025-07-30
 categories:
-    - AI ML
+    - LLM Engineering
+tags:
+    - RAG
+    - LightRAG
+    - Retrival
+    - Embeddings
 meta:
     - name: keywords
       content: LightRAG, Retrieval Augmented Generation, RAG Implementation

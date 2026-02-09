@@ -7,7 +7,12 @@ slug: rag-for-knowledge-intensive-nlp-tasks
 date:
     created: 2025-09-24
 categories:
-    - AI ML
+    - LLM Engineering
+tags:
+    - RAG
+    - Retrival
+    - Embeddings
+    - Document AI
 meta:
     - name: keywords
       content: Retrieval Augmented Generation, RAG, Knowledge-Intensive NLP

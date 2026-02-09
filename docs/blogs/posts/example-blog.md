@@ -7,14 +7,10 @@ slug: example-blog
 date:
     created: 3025-09-24
 categories:
-    - Python
-    - Data Science
-    - AI ML
-    - DevOps
-    - System Design
-    - Automation
-    - Freelancing   
-    - Physics  
+    - Software Engineering
+tags:
+    - API
+    - FastAPI
 meta:
     - name: keywords
       content: Example, Blog, Description

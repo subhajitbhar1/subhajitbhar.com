@@ -7,8 +7,11 @@ slug: outliers-in-python
 date:
     created: 3025-09-30
 categories:
-    - Python
     - Data Science
+tags:
+    - Numpy
+    - Pandas
+    - Scikit-learn
 meta:
     - name: keywords
       content: Outlier Detection, Python Statistics, Data Analysis

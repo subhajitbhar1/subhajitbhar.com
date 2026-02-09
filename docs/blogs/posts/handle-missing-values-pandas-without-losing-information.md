@@ -7,8 +7,9 @@ slug: pandas-missing-values
 date: 
     created: 2025-09-17
 categories:
-    - Python
     - Data Science
+tags:
+    - Pandas
 meta:
     - name: keywords
       content: Pandas, Missing Values, Data Cleaning

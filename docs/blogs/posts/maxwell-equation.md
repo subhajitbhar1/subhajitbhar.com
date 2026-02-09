@@ -7,7 +7,7 @@ slug: maxwell-equations-explained
 date: 
     created: 2125-09-17
 categories:
-    - Physics
+    - Data Science
 meta:
     - name: keywords
       content: Maxwell Equations, Electromagnetism, Physics

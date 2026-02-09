@@ -7,7 +7,8 @@ slug: nlp-entity-matching-with-fuzzy-search
 date:
     created: 2025-08-14
 categories:
-    - Python
+    - LLM Engineering
+tags:
     - NLP
 meta:
     - name: keywords

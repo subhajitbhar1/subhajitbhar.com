@@ -8,7 +8,12 @@ draft: true
 date:
     created: 2025-01-29
 categories:
-    - AI ML
+    - LLM Engineering
+tags:
+    - RAG
+    - Retrival
+    - Embeddings
+    - Vector Databases
 meta:
     - name: keywords
       content: FAISS, LightRAG, Vector Index, IVF, HNSW, Production RAG, Vector Search

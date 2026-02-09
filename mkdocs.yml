@@ -62,17 +62,29 @@ plugins:
   - tags:
       enabled: true
       tags_allowed:
-        - Python
-        - Data Science
-        - Artificial Intelligence
-        - Machine Learning
-        - AI ML
-        - DevOps
-        - System Design
-        - Automation
-        - Freelancing
+        - Numpy
+        - Pandas
+        - Matplotlib
+        - Seaborn
+        - Plotly
+        - Scikit-learn
+        - RAG
+        - NLP
+        - LangChain
+        - LightRAG
+        - Retrival
+        - Embeddings
+        - Vector Databases
+        - Document AI
         - API
         - FastAPI
+        - System Design
+        - DevOps
+        - Git
+        - GitHub
+        - CI/CD
+        - Ruff
+        - Automation
   - social:
       cache_dir: .cache/social
       cards_dir: assets/images/social
@@ -92,21 +104,10 @@ plugins:
       draft_if_future_date: true
       pagination_per_page: 10
       categories_allowed:
-        - Python
         - Data Science
-        - Artificial Intelligence
+        - LLM Engineering
         - Machine Learning
-        - AI ML
-        - DevOps
-        - System Design
-        - Automation
-        - Freelancing
-        - Physics
-        - SEO
-        - Natural Language Processing
-        - NLP
-        - Document AI
-        -
+        - Software Engineering
   - blog:
       blog_dir: projects
       blog_toc: true

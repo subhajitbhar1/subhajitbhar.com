@@ -7,7 +7,10 @@ slug: secure-scalable-apis-guide
 date:
     created: 2025-09-24
 categories:
-    - Python
+    - Software Engineering
+tags:
+    - API
+    - FastAPI
     - System Design
 meta:
     - name: keywords

@@ -8,7 +8,12 @@ draft: true
 date:
     created: 2025-01-29
 categories:
-    - AI ML
+    - LLM Engineering
+tags:
+    - RAG
+    - LightRAG
+    - LangChain
+    - Retrival
 meta:
     - name: keywords
       content: LightRAG, LangChain, Retriever, RAG Integration, LangChain Retriever
