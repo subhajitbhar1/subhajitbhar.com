@@ -24,8 +24,8 @@ def on_page_markdown(markdown, **kwargs):
 
     Join my newsletter for the latest insights on Document AI, RAG, and LLM technologies:
 
-    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 8px; margin: 1.5rem 0;">
-        <iframe src="https://documentai.substack.com/embed" width="100%" height="200" style="border: none; background: white; border-radius: 4px;" frameborder="0" scrolling="no"></iframe>
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1rem; border-radius: 8px; margin: 1.5rem 0;">
+        <iframe src="https://documentai.substack.com/embed" width="100%" height="320" style="border: none; background: white; border-radius: 4px; max-width: 100%;" frameborder="0" scrolling="no"></iframe>
     </div>
 
     ---
