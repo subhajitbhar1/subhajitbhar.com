@@ -4,7 +4,6 @@ authors:
 title: "BM25 Hybrid Search with LightRAG"
 description: Combine BM25 lexical search with vector search using Reciprocal Rank Fusion for better retrieval.
 slug: lightrag-bm25-hybrid-search
-draft: true
 date:
     created: 2025-01-29
 categories:

@@ -4,7 +4,6 @@ authors:
 title: "LightRAG as a LangChain Retriever"
 description: Integrate LightRAG's minimal retrieval into LangChain chains by implementing a custom BaseRetriever.
 slug: lightrag-langchain-retriever-integration
-draft: true
 date:
     created: 2025-01-29
 categories:

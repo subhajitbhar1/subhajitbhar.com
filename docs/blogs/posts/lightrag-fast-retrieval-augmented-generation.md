@@ -11,8 +11,6 @@ categories:
 tags:
     - RAG
     - LightRAG
-    - Retrival
-    - Embeddings
 meta:
     - name: keywords
       content: LightRAG, Retrieval Augmented Generation, RAG Implementation
