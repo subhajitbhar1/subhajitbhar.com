@@ -20,7 +20,6 @@ def on_page_markdown(markdown, **kwargs):
 
     return markdown + dedent(f"""
     ---
-
     ## Stay Updated
 
     Join my newsletter for the latest insights on Document AI, RAG, and LLM technologies:
