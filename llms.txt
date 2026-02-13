@@ -1,0 +1,48 @@
+# Subhajit Bhar
+
+> Personal website of Subhajit Bhar, a freelance LLM Engineer. Technical blog posts on AI/ML, RAG, Python, data science, DevOps, and system design — plus project case studies.
+
+- [Home](https://subhajitbhar.com/)
+- [Blog](https://subhajitbhar.com/blogs/)
+- [Projects](https://subhajitbhar.com/projects/)
+- [Testimonials](https://subhajitbhar.com/testimonials/)
+- [Sitemap](https://subhajitbhar.com/sitemap.xml)
+
+## Blog Posts — AI, RAG & NLP
+
+- [LightRAG: Lean RAG with Benchmarks](https://subhajitbhar.com/blogs/lightrag-fast-retrieval-augmented-generation/): LightRAG implementation guide with code, benchmarks vs. LangChain, and use cases.
+- [RAG for Knowledge-Intensive Tasks](https://subhajitbhar.com/blogs/rag-for-knowledge-intensive-nlp-tasks/): Learn RAG fundamentals for knowledge-intensive NLP with practical examples and use cases.
+- [LangChain: RAG Architecture & Code](https://subhajitbhar.com/blogs/does-langchain-use-rag/): LangChain RAG implementation with architecture, retrieval options, code, and metrics.
+- [NLP Entity Matching with Fuzzy Search](https://subhajitbhar.com/blogs/nlp-entity-matching-with-fuzzy-search/): Match product catalogs with fuzzy search using lexical and semantic similarity methods.
+- [Document Summarization: Eval First](https://subhajitbhar.com/blogs/nlp-document-summarization-eval/): Build document summarization with ROUGE/BERTScore evaluation and human review checklists.
+
+## Blog Posts — Python & Data Science
+
+- [Ruff — a modern Python linter and formatter](https://subhajitbhar.com/blogs/ruff-modern-linter/): Step-by-step Ruff setup and usage with uv, configuration, pre-commit, and CI.
+- [Difference between reshape() and flatten() in NumPy](https://subhajitbhar.com/blogs/difference-reshape-flatten-numpy/): Master NumPy reshape() and flatten() methods with examples and performance comparisons.
+- [Outliers in Python: IQR and Z-Score](https://subhajitbhar.com/blogs/detect-remove-outliers-python-iqr-zscore/): Detect and remove outliers using IQR and Z-Score methods with practical Python examples.
+- [Outliers Detection in Python](https://subhajitbhar.com/blogs/outliers-in-python/): Complete guide to outlier detection in Python with statistical methods and visualizations.
+- [Handle Missing Values in Pandas Without Losing Information](https://subhajitbhar.com/blogs/pandas-missing-values/): Proven methods to handle missing data in pandas without losing information or skewing results.
+
+## Blog Posts — DevOps & System Design
+
+- [System Architecture — A Comprehensive, Practical Guide](https://subhajitbhar.com/blogs/system-architecture-comprehensive-guide/): Master system architecture with core concepts, design patterns, trade-offs, and production tips.
+- [The Definitive Guide to Version Control with Git and GitHub](https://subhajitbhar.com/blogs/version-control-git-github/): Complete Git and GitHub guide with workflows, commands, branching, CI/CD, and troubleshooting.
+- [Git 101 – Commands and Workflows Cheat Sheet](https://subhajitbhar.com/blogs/git-101-cheat-sheet/): Practical Git commands and workflows with a minimal mental model, examples, and copy-paste snippets.
+- [How you can set up a Python Code Quality CI Pipeline in 5 minutes](https://subhajitbhar.com/blogs/modern-ci-pipeline/): Step-by-step guide to set up a Python Code Quality CI Pipeline using uv, Ruff, and ty.
+
+## Blog Posts — APIs
+
+- [Beginners Guide to Building and Securing APIs](https://subhajitbhar.com/blogs/api-101-beginner-guide/): Step-by-step guide to API basics with FastAPI examples, security tips, and practical code.
+- [Designing Secure and Scalable APIs — A Comprehensive Guide](https://subhajitbhar.com/blogs/secure-scalable-apis-guide/): Build secure and scalable APIs with FastAPI best practices, security tips, and checklists.
+
+## Blog Posts — Other
+
+- [Understanding Maxwell's Equations - The Foundation of Electromagnetism](https://subhajitbhar.com/blogs/maxwell-equations-explained/): Understand Maxwell's four fundamental equations with plain-English explanations and real-world applications.
+- [On-Page SEO vs Off-Page SEO](https://subhajitbhar.com/blogs/On-Page-SEO-vs-Off-Page-SEO/): Compare On-Page and Off-Page SEO strategies to boost your website visibility and rankings.
+
+## Projects
+
+- [LLM-Augmented PDF Data Extraction Pipeline](https://subhajitbhar.com/projects/llm-augmented-pdf-data-extraction-pipeline/): LLM-augmented pipeline for extracting structured data from PDF documents.
+- [Production-Ready Rule-Based Data Extraction API](https://subhajitbhar.com/projects/production-ready-rule-based-data-extraction-api/): Production-ready API for rule-based data extraction from documents.
+- [Real-time Stoploss Engine for Trading](https://subhajitbhar.com/projects/real-time-stoploss-engine-for-trading-project/): Real-time stoploss engine for automated trading systems.

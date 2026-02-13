@@ -1,0 +1,24 @@
+User-agent: Bingbot
+Allow: /
+Allow: /blogs/
+Allow: /tags/
+Allow: /projects/
+Allow: /testimonials/
+
+User-agent: *
+Allow: /
+Allow: /blogs/
+Allow: /tags/
+Allow: /projects/
+Allow: /testimonials/
+
+# Block specific areas (examples)
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /cdn-cgi/
+
+# Sitemap
+Sitemap: https://subhajitbhar.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
