@@ -1,3 +1,10 @@
+User-agent: Bingbot
+Allow: /
+Allow: /blogs/
+Allow: /tags/
+Allow: /projects/
+Allow: /testimonials/
+
 User-agent: *
 Allow: /
 Allow: /blogs/
@@ -12,9 +19,6 @@ Disallow: /cdn-cgi/
 
 # Sitemap
 Sitemap: https://subhajitbhar.com/sitemap.xml
-
-# LLMs
-Llms-txt: https://subhajitbhar.com/llms.txt
 
 # Crawl-delay
 Crawl-delay: 1
